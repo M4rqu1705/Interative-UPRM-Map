@@ -1,7 +1,7 @@
 .circle {
   border-radius: 50%;
-  background-color: whitesmoke;
-  position: fixed;
+  background-color: blue;
+  position: absolute;
   opacity: 0;
   animation: scaleIn 4s infinite ease-in;
   pointer-events: "none";

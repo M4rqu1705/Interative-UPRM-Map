@@ -13,126 +13,127 @@ function App(): any {
       left: 45.21,
       top: 46.19,
       radius: 2,
-      keywords: [],
+      keywords: ["1"],
     },
     {
       name: "Administración de Empresas",
-      left: 17.77,
-      top: 15.91,
+      left: 24.71,
+      top: 20.7,
       radius: 2,
-      keywords: ["ae"],
+      keywords: ["2", "ae"],
     },
     {
       name: "Almacén del CID",
-      left: 83.62,
-      top: 28.23,
+      left: 84.2,
+      top: 29.6,
       radius: 2,
-      keywords: [],
+      keywords: ["3"],
     },
     {
       name: "Almacén Obras de MuSA",
-      left: 60.68,
-      top: 80.75,
+      left: 61.25,
+      top: 82.72,
       radius: 2,
-      keywords: [],
+      keywords: ["4"],
     },
     {
       name: "Antiguo Centro Nuclear (varios programas incluyendo Sea Grant)",
-      left: 76.92,
-      top: 26.18,
+      left: 79.21,
+      top: 28.23,
       radius: 2,
-      keywords: ["sea grant"],
+      keywords: ["5"],
     },
     {
       name: "Antigua Pista Atlética",
-      left: 76.85,
-      top: 80.58,
+      left: 86.83,
+      top: 87.0,
       radius: 2,
-      keywords: [],
+      keywords: ["6"],
     },
     {
       name: "Banda y Orquesta",
-      left: 75.1,
-      top: 78.36,
+      left: 81.9,
+      top: 79.73,
       radius: 2,
-      keywords: [],
+      keywords: ["7"],
     },
     {
       name: "Biblioteca General",
-      left: 53.54,
-      top: 57.57,
+      left: 57.57,
+      top: 62.28,
       radius: 2,
-      keywords: [],
+      keywords: ["8"],
     },
     {
-      name: "Biología",
-      left: 61.11,
-      top: 24.04,
+      name: "Edificio de Biología",
+      left: 65.18,
+      top: 28.23,
       radius: 2,
-      keywords: ["b"],
+      keywords: ["9", "b"],
     },
     {
       name: "Centro de Cuido Diurno",
-      left: 6.47,
-      top: 39.95,
+      left: 8.81,
+      top: 42.09,
       radius: 2,
-      keywords: [],
+      keywords: ["10"],
     },
     {
       name: "Centro de Estudiantes",
-      left: 63.36,
-      top: 60.14,
+      left: 66.04,
+      top: 64.33,
       radius: 2,
-      keywords: [],
+      keywords: ["11"],
     },
     {
       name: "Central Telefónica",
-      left: 44.35,
-      top: 51.67,
+      left: 45.26,
+      top: 53.29,
       radius: 2,
-      keywords: [],
+      keywords: ["12"],
     },
     {
       name: "CISA",
-      left: 78.74,
-      top: 21.56,
+      left: 79.98,
+      top: 23.27,
       radius: 2,
-      keywords: [],
+      keywords: ["13"],
     },
     {
       name: "Coliseo Rafael A. Mangual",
-      left: 30.84,
-      top: 56.37,
+      left: 35.44,
+      top: 62.87,
       radius: 2,
-      keywords: ["cm"],
+      keywords: ["14", "cm"],
     },
     {
       name: "Complejo de Tennis 2010",
-      left: 10.3,
-      top: 40.38,
+      left: 12.21,
+      top: 43.63,
       radius: 2,
-      keywords: [],
+      keywords: ["15"],
     },
     {
       name: "Cuarto Limpio (CID)",
-      left: 84.0,
-      top: 31.31,
+      left: 85.3,
+      top: 32.93,
       radius: 2,
-      keywords: [],
+      keywords: ["16"],
     },
     {
       name: "Natatorio 2010",
-      left: 13.94,
-      top: 29.6,
+      left: 18.92,
+      top: 37.64,
       radius: 2,
-      keywords: [],
+      keywords: ["17"],
     },
     {
       name: "Decanato de Estudiantes (Asistencia Económica / Calidad de Vida / Dept. de Consejería y Servicios Psicológicos)",
-      left: 74.47,
-      top: 75.88,
+      left: 75.96,
+      top: 78.44,
       radius: 2,
       keywords: [
+        "18",
         "asistencia economica",
         "calidad de vida",
         "consejeria y servicios psicologicos",
@@ -140,323 +141,324 @@ function App(): any {
     },
     {
       name: "Departamento de Edificios y Terrenos",
-      left: 31.61,
-      top: 26.18,
+      left: 35.68,
+      top: 35.67,
       radius: 2,
-      keywords: [],
+      keywords: ["19"],
     },
     {
-      name: "Sánchez Hidalgo (DECEP / PpMES / Economía)",
-      left: 59.15,
-      top: 45.94,
+      name: "Edificio Sánchez Hidalgo (DECEP / PpMES / Economía)",
+      left: 62.31,
+      top: 47.65,
       radius: 2,
-      keywords: ["sh", "decep"],
+      keywords: ["20", "sh", "decep"],
     },
     {
       name: "Edificio A (Dormitorio de Atletas)",
-      left: 6.85,
-      top: 30.28,
+      left: 7.95,
+      top: 32.34,
       radius: 2,
-      keywords: ["dormitorio atletas"],
+      keywords: ["21", "dormitorio atletas"],
     },
     {
       name: "Edificio B (Adm. Pequeños Negocios / Ofic. Adm.)",
-      left: 10.15,
-      top: 29.43,
+      left: 11.78,
+      top: 32.16,
       radius: 2,
-      keywords: [],
+      keywords: ["22"],
     },
     {
       name: "Edificio C (Oficina de Extensión Agrícola)",
-      left: 4.93,
-      top: 34.05,
+      left: 6.47,
+      top: 36.18,
       radius: 2,
-      keywords: [],
+      keywords: ["23"],
     },
     {
       name: "Edificio D",
-      left: 8.38,
-      top: 32.25,
+      left: 9.43,
+      top: 34.13,
       radius: 2,
-      keywords: [],
+      keywords: ["24"],
     },
     {
-      name: "Chardón (Estudios Generales)",
-      left: 68.15,
-      top: 53.55,
+      name: "Edificio Chardón (Estudios Generales)",
+      left: 72.7,
+      top: 61.51,
       radius: 2,
-      keywords: ["ch"],
+      keywords: ["25", "ch"],
     },
     {
-      name: "Jesús T. Piñero (Ciencias Agrícolas)",
-      left: 48.61,
-      top: 76.9,
+      name: "Edificio Jesús T. Piñero (Ciencias Agrícolas)",
+      left: 51.72,
+      top: 82.89,
       radius: 2,
-      keywords: ["p"],
+      keywords: ["26", "p"],
     },
     {
-      name: "José de Diego",
-      left: 68.68,
-      top: 73.91,
+      name: "Edificio José de Diego",
+      left: 70.83,
+      top: 75.79,
       radius: 2,
-      keywords: [],
+      keywords: ["27"],
     },
     {
-      name: "Luis de Celis (Admisiones - Celis 101 / Registro / Decanato de Artes y Ciencias / Estudios Graduados)",
-      left: 69.44,
-      top: 66.81,
+      name: "Edificio Luis de Celis (Admisiones - Celis 101 / Registro / Decanato de Artes y Ciencias / Estudios Graduados)",
+      left: 73.47,
+      top: 67.49,
       radius: 2,
-      keywords: ["c"],
+      keywords: ["28", "c"],
     },
     {
-      name: "Luis Monzón",
-      left: 62.84,
-      top: 70.92,
+      name: "Edificio Luis Monzón",
+      left: 66.14,
+      top: 74.76,
       radius: 2,
-      keywords: ["m"],
+      keywords: ["29", "m"],
     },
     {
-      name: "Luis Stefani",
+      name: "Edificio Luis Stefani",
       left: 78.35,
       top: 60.14,
       radius: 2,
-      keywords: ["s"],
+      keywords: ["30", "s"],
     },
     {
-      name: "Oficinas de Facultad",
-      left: 54.45,
-      top: 49.87,
+      name: "Edificio Oficinas de Facultad",
+      left: 57.81,
+      top: 51.07,
       radius: 2,
-      keywords: [],
+      keywords: ["31"],
     },
     {
-      name: "Ramírez de Arellano y Rossell",
-      left: 0,
-      top: 0,
+      name: "Edificio Ramírez de Arellano y Rossell",
+      left: 3.98,
+      top: 45.25,
       radius: 2,
-      keywords: [],
+      keywords: ["32"],
     },
     {
-      name: "Josefina Torres Torres (Enfermería)",
-      left: 0,
-      top: 0,
+      name: "Edificio Josefina Torres Torres (Enfermería)",
+      left: 49.09,
+      top: 53.21,
       radius: 2,
-      keywords: ["ee"],
+      keywords: ["33", "ee"],
     },
     {
       name: "Canchas Racquetball 2010",
-      left: 0,
-      top: 0,
+      left: 14.56,
+      top: 28.06,
       radius: 2,
-      keywords: [],
+      keywords: ["34"],
     },
     {
-      name: "Terrats (Finanzas y Pagaduría)",
-      left: 0,
-      top: 0,
+      name: "Edificio Terrats (Finanzas y Pagaduría)",
+      left: 75.91,
+      top: 50.81,
       radius: 2,
-      keywords: ["t"],
+      keywords: ["35", "t"],
     },
     {
       name: "Finca Alzamora",
-      left: 0,
-      top: 0,
+      left: 1.25,
+      top: 37.3,
       radius: 2,
-      keywords: ["az"],
+      keywords: ["36", "az"],
     },
     {
       name: "Física, Geología y Ciencias Marinas",
-      left: 0,
-      top: 0,
+      left: 72.84,
+      top: 44.57,
       radius: 2,
-      keywords: ["f"],
+      keywords: ["37", "f"],
     },
     {
       name: "Gimnasio Ángel F. Espada",
-      left: 0,
-      top: 0,
+      left: 44.59,
+      top: 65.53,
       radius: 2,
-      keywords: ["ge"],
+      keywords: ["38", "ge"],
     },
     {
       name: "Ofic. en Remodelación Guardia Universitaria",
-      left: 0,
-      top: 0,
+      left: 75,
+      top: 49.1,
       radius: 2,
-      keywords: [],
+      keywords: ["39"],
     },
     {
       name: "Imprenta y Artes Plásticas",
-      left: 0,
-      top: 0,
+      left: 14.99,
+      top: 20.27,
       radius: 2,
-      keywords: [],
+      keywords: ["40"],
     },
     {
-      name: "Ingeniería Civil",
-      left: 0,
-      top: 0,
+      name: "Edificio Ingeniería Civil",
+      left: 51.82,
+      top: 19.93,
       radius: 2,
-      keywords: ["ci"],
+      keywords: ["41", "ci"],
     },
     {
-      name: "Ingeniería Industrial",
-      left: 0,
-      top: 0,
+      name: "Edificio Ingeniería Industrial",
+      left: 72.32,
+      top: 51.67,
       radius: 2,
-      keywords: ["ii"],
+      keywords: ["42", "ii"],
     },
     {
-      name: "Antonio Luchetti (Ingeniería Mecánica)",
-      left: 0,
-      top: 0,
+      name: "Edificio Antonio Luchetti (Ingeniería Mecánica)",
+      left: 82.04,
+      top: 70.66,
       radius: 2,
-      keywords: ["l"],
+      keywords: ["43", "l"],
     },
     {
-      name: "Ingeniería Química",
-      left: 0,
-      top: 0,
+      name: "Edificio Ingeniería Química",
+      left: 47.27,
+      top: 26.69,
       radius: 2,
-      keywords: ["iq"],
+      keywords: ["44", "iq"],
     },
     {
       name: "Museo de Vehículos Solares",
-      left: 0,
-      top: 0,
+      left: 76.87,
+      top: 24.21,
       radius: 2,
-      keywords: [],
+      keywords: ["45"],
     },
     {
       name: "Laboratorio Ingeniería Agrícola",
-      left: 0,
-      top: 0,
+      left: 41.71,
+      top: 40.72,
       radius: 2,
-      keywords: [],
+      keywords: ["46"],
     },
     {
       name: "Laboratorio de Vehículos Solares",
-      left: 0,
-      top: 0,
+      left: 78.07,
+      top: 20.62,
       radius: 2,
-      keywords: [],
+      keywords: ["47"],
     },
     {
       name: "Centro Interdisciplinario de Estudios del Litoral",
-      left: 0,
-      top: 0,
+      left: 72.56,
+      top: 24.47,
       radius: 2,
-      keywords: [],
+      keywords: ["48"],
     },
     {
       name: "MuSA (Museo y Senado Académico)",
-      left: 0,
-      top: 0,
+      left: 59.1,
+      top: 77.07,
       radius: 2,
-      keywords: [],
+      keywords: ["49"],
     },
     {
       name: "Nueva Pista Atlética",
-      left: 0,
-      top: 0,
+      left: 29.12,
+      top: 49.44,
       radius: 2,
-      keywords: [],
+      keywords: ["50"],
     },
     {
       name: "CID (Oficina Administrativa)",
-      left: 0,
-      top: 0,
+      left: 81.03,
+      top: 35.41,
       radius: 2,
-      keywords: [],
+      keywords: ["51"],
     },
     {
       name: "Ofic. Campus Verde (Casa Solar 2005)",
-      left: 0,
-      top: 0,
+      left: 75.19,
+      top: 29.43,
       radius: 2,
-      keywords: [],
+      keywords: ["52"],
     },
     {
       name: "Programa Rehabilitación Vocacional",
-      left: 0,
-      top: 0,
+      left: 61.54,
+      top: 40.21,
       radius: 2,
-      keywords: [],
+      keywords: ["53"],
     },
     {
       name: "OMCA",
-      left: 0,
-      top: 0,
+      left: 64.8,
+      top: 42.43,
       radius: 2,
-      keywords: [],
+      keywords: ["54"],
     },
     {
-      name: "Química",
-      left: 0,
-      top: 0,
+      name: "Edificio de Química",
+      left: 53.54,
+      top: 44.05,
       radius: 2,
-      keywords: ["q"],
+      keywords: ["55", "q"],
     },
     {
       name: "Red Sísmica",
-      left: 0,
-      top: 0,
+      left: 67.0,
+      top: 41.83,
       radius: 2,
-      keywords: [],
+      keywords: ["56"],
     },
     {
       name: "Residencia del Rector",
-      left: 0,
-      top: 0,
+      left: 64.03,
+      top: 83.83,
       radius: 2,
-      keywords: [],
+      keywords: ["57"],
     },
     {
       name: "R.O.T.C.",
-      left: 0,
-      top: 0,
+      left: 80.51,
+      top: 64.33,
       radius: 2,
-      keywords: [],
+      keywords: ["58"],
     },
     {
       name: "Sendero de los ejercicios",
-      left: 0,
-      top: 0,
+      left: 25.0,
+      top: 78.61,
       radius: 2,
-      keywords: [],
+      keywords: ["59"],
     },
     {
       name: "Servicios Médicos y Sala de Emergencia",
-      left: 0,
-      top: 0,
+      left: 59.15,
+      top: 70.49,
       radius: 2,
-      keywords: [],
+      keywords: ["60"],
     },
     {
       name: "Taller de Artes Gráficas",
-      left: 0,
-      top: 0,
+      left: 46.7,
+      top: 43.63,
       radius: 2,
-      keywords: [],
+      keywords: ["61"],
     },
     {
       name: "Instalaciones Temporeras Guardia Universitaria",
-      left: 0,
-      top: 0,
+      left: 44.25,
+      top: 48.5,
       radius: 2,
-      keywords: [],
+      keywords: ["62"],
     },
     {
       name: "Salón Mezzanine",
-      left: 0,
-      top: 0,
+      left: 8.96,
+      top: 46.96,
       radius: 2,
-      keywords: [],
+      keywords: ["63"],
     },
   ];
 
   const defaultMessage =
     "Use la barra de búsqueda o haga click al lugar que quiera identificar.";
+  const defaultErrorMessage = "No se encontró ningún edificio con ese nombre.";
 
   const [searchResult, setSearchResult] = useState(defaultMessage);
 
@@ -484,6 +486,7 @@ function App(): any {
   window.addEventListener("load", updateImageProportions);
   window.addEventListener("zoom", updateImageProportions);
   window.addEventListener("orientationchange", updateImageProportions);
+  window.addEventListener("scroll", updateImageProportions);
 
   const imageWasClicked = (event: any) => {
     event.preventDefault();
@@ -509,7 +512,9 @@ function App(): any {
     });
   };
 
-  const seachQueryChanged = (event: React.SyntheticEvent<HTMLInputElement>) => {
+  const searchQueryChanged = (
+    event: React.SyntheticEvent<HTMLInputElement>
+  ) => {
     const query = event.currentTarget.value
       .toLowerCase()
       .normalize("NFD")
@@ -520,47 +525,50 @@ function App(): any {
       return;
     }
 
+    let foundKeyword = false;
+    buildings.forEach((element, idx) => {
+      if (element.keywords.includes(query)) {
+        foundKeyword = true;
+        setSearchResult(`(${idx + 1}) ${element.name}`);
+        return;
+      }
+    });
+    if (foundKeyword) return;
+
     let closestElement = "";
     let closestScore = 0;
 
     buildings.forEach((element, idx) => {
-      if (element.keywords.includes(query)) {
+      let queue = query.split("");
+      const elementName = element.name
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+      let score = 0;
+
+      for (let i = 0; i < elementName.length && queue.length > 0; i++) {
+        const char = elementName[i];
+
+        if (char === queue[0]) {
+          queue = queue.slice(1);
+          score++;
+        }
+      }
+
+      if (score > closestScore) {
         closestElement = `(${idx + 1}) ${element.name}`;
-        closestScore = Number.MAX_VALUE;
+        closestScore = score;
       }
     });
 
-    if (closestScore === 0)
-      buildings.forEach((element, idx) => {
-        let queue = query.split("");
-        const elementName = element.name
-          .toLowerCase()
-          .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "");
-        let score = 0;
-
-        for (let i = 0; i < elementName.length && queue.length > 0; i++) {
-          const char = elementName[i];
-
-          if (char === queue[0]) {
-            queue = queue.slice(1);
-            score++;
-          }
-        }
-
-        if (score > closestScore) {
-          closestElement = `(${idx + 1}) ${element.name}`;
-          closestScore = score;
-        }
-      });
-
-    setSearchResult(closestElement);
+    if (closestScore !== 0) setSearchResult(closestElement);
+    else setSearchResult(defaultErrorMessage);
   };
 
   return (
-    <Content>
-      <h1 className="mt-4 mx-2 has-text-centered">Mapa Interactivo UPRM</h1>
-      <Card className="p-4 m-a" style={{ width: "100vw", maxWidth: "1000px" }}>
+    <Content className="is-flex is-flex-direction-column is-align-items-center">
+      <h1 className="mt-4 mx-2">Mapa Interactivo UPRM</h1>
+      <Card className="p-4 mx-a" style={{ width: "100vw", maxWidth: "1000px" }}>
         <form>
           <Form.Field>
             <Form.Label>Búsqueda</Form.Label>
@@ -568,7 +576,7 @@ function App(): any {
               <Form.Input
                 type="search"
                 placeholder="Stefani"
-                onChange={seachQueryChanged}
+                onChange={searchQueryChanged}
                 onKeyDown={(event: any) => {
                   if (event.keyCode === 13) {
                     event.preventDefault();

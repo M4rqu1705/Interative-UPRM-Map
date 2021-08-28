@@ -10,7 +10,7 @@ export default function Bubble(
     width: props.radius * 2,
     height: props.radius * 2,
     left: props.left - props.radius,
-    top: props.top - props.radius * 1.25,
+    top: props.top * 0.99 - props.radius,
     zIndex: 1,
     pointerEvents: "none",
   };
