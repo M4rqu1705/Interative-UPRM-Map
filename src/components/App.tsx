@@ -198,7 +198,7 @@ function App(): ReactElement {
           <Card.Image
             id="Mapa-UPRM"
             style={{ padding: 0, margin: "1rem" }}
-            src="assets/Mapa_UPRM.png"
+            src="assets/Mapa_UPRM.webp"
             alt="Imagen del mapa de UPR Mayagüez"
             onClick={imageWasClicked}
           />
