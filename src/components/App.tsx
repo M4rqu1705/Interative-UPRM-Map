@@ -1,11 +1,16 @@
 import React, { useState, ReactElement } from "react";
-import { Card, Content, Container, Form } from "react-bulma-components";
+import { Card, Content, Container, Form, Button } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faChevronUp,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 import Bubble from "./Bubble";
 import buildings from "../data/buildings.json";
 
 function App(): ReactElement {
+  // Configuration constants
   const defaultMessage =
     "Use la barra de búsqueda o haga click al lugar que quiera identificar.";
   const defaultErrorMessage = "No se encontró ningún edificio con ese nombre.";
@@ -18,6 +23,7 @@ function App(): ReactElement {
       .replace(/[\u0300-\u036f]/g, "");
   }
 
+  // State variables
   const [searchResult, setSearchResult] = useState(defaultMessage);
 
   let imageBoundingRect: DOMRect | undefined;
@@ -26,6 +32,9 @@ function App(): ReactElement {
   const [imageWidth, setImageWidth] = useState(0);
   const [imageHeight, setImageHeight] = useState(0);
 
+  const [listExpanded, setListExpanded] = useState(false);
+
+  // Event listeners
   function updateImageProportions() {
     imageBoundingRect = document
       ?.getElementById("Mapa-UPRM")
@@ -36,7 +45,6 @@ function App(): ReactElement {
     setImageWidth(imageBoundingRect?.width || 0);
     setImageHeight(imageBoundingRect?.height || 0);
   }
-  // updateImageProportions();
 
   // Add event listeners to update image size and position state
   ["load", "zoom", "orientationchange", "scroll"].forEach((event: string) =>
@@ -205,6 +213,55 @@ function App(): ReactElement {
 
           <Container style={{ margin: "1rem" }}>
             <p className="is-size-3-desktop is-size-5-touch">{searchResult}</p>
+          </Container>
+
+          <Container
+            className="p-3 my-4"
+            style={{
+              border: "0.5rem double forestgreen",
+              borderRadius: "1rem",
+              height: "auto",
+            }}
+          >
+            <Button
+              fullwidth={true}
+              color="success"
+              onClick={() => setListExpanded(!listExpanded)}
+            >
+              {listExpanded ? (
+                <FontAwesomeIcon icon={faChevronUp} />
+              ) : (
+                <FontAwesomeIcon icon={faChevronDown} />
+              )}
+            </Button>
+
+            <div
+              style={{
+                overflow: "hidden",
+                transition: "max-height 0.75s ease",
+                height: "auto",
+                maxHeight: listExpanded ? "5000px" : "0px",
+                marginTop: listExpanded ? "1rem" : "0",
+              }}
+            >
+              {buildings.map((element: BuildingsType, idx: number) => (
+                <p
+                  key={idx}
+                  className="is-size-5 m-1"
+                  style={{
+                    display: listExpanded ? "block" : "none",
+                    cursor: "pointer",
+                  }}
+                  onClick={(event: React.MouseEvent<HTMLParagraphElement>) => {
+                    event.preventDefault();
+                    setSearchResult(`(${idx + 1}) ${element.name}`);
+                    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+                  }}
+                >
+                  {idx + 1}. {element.name}
+                </p>
+              ))}
+            </div>
           </Container>
         </Card.Content>
 
