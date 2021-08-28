@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Content, Container, Form } from "react-bulma-components";
+import { Button, Card, Content, Container, Form } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "bulma/css/bulma.min.css";
@@ -488,25 +488,6 @@ function App(): any {
   window.addEventListener("orientationchange", updateImageProportions);
   window.addEventListener("scroll", updateImageProportions);
 
-  function LCS(a: string, b: string): number {
-    const c: Array<Array<number>> = [];
-
-    for (let i = 0; i <= a.length; i++) {
-      const temp = [];
-      for (let j = 0; j <= b.length; j++) temp.push(0);
-      c.push(temp);
-    }
-
-    for (let i = 1; i <= a.length; i++) {
-      for (let j = 1; j <= b.length; j++) {
-        if (a[i - 1] === b[j - 1]) c[i][j] = c[i - 1][j - 1] + 1;
-        else c[i][j] = Math.max(c[i][j - 1], c[i - 1][j]);
-      }
-    }
-
-    return c[a.length][b.length] || 0;
-  }
-
   function imageWasClicked(event: any) {
     event.preventDefault();
 
@@ -532,10 +513,43 @@ function App(): any {
   }
 
   function searchQueryChanged(event: React.SyntheticEvent<HTMLInputElement>) {
-    const query = event.currentTarget.value
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+    const standardize = (str: string): string =>
+      str
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+    function DamerauLeveshteinDistance(a: string, b: string): number {
+      const d: Array<Array<number>> = [];
+
+      for (let i = 0; i <= a.length; i++) {
+        const temp = [];
+        for (let j = 0; j <= b.length; j++) temp.push(0);
+        d.push(temp);
+      }
+
+      for (let i = 0; i <= a.length; i++) d[i][0] = i;
+      for (let j = 0; j <= b.length; j++) d[0][j] = j;
+
+      for (let i = 1; i <= a.length; i++) {
+        for (let j = 1; j <= b.length; j++) {
+          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+
+          d[i][j] = Math.min(
+            d[i - 1][j] + 1,
+            d[i][j - 1] + 1,
+            d[i - 1][j - 1] + cost
+          );
+
+          if (i > 2 && j > 2 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1])
+            d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+        }
+      }
+
+      return d[a.length][b.length];
+    }
+
+    const query = standardize(event.currentTarget.value);
 
     if (query.length == 0) {
       setSearchResult(defaultMessage);
@@ -554,20 +568,16 @@ function App(): any {
     if (foundKeyword) return;
 
     // Otherwise find match with the longest common subsequence
-    let closestElement = "";
-    let closestScore = Number.MIN_SAFE_INTEGER;
+    let closestElement = "(0) ";
+    let closestScore = Number.MAX_SAFE_INTEGER;
 
     buildings.forEach((element, idx) => {
-      const elementName = element.name
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
+      const elementName = standardize(element.name);
 
-      const score = LCS(query, elementName);
+      const score =
+        DamerauLeveshteinDistance(query, elementName) / elementName.length;
 
-      // console.log(`(${idx + 1}) ${element.name} -> ${score}`);
-
-      if (score > closestScore) {
+      if (score < closestScore) {
         closestElement = `(${idx + 1}) ${element.name}`;
         closestScore = score;
       }
