@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { ReactElement } from "react";
 import "bulma/css/bulma.min.css";
 import "../styles/Bubble.css";
 
 export default function Bubble(
   props: BuildingsType & { active: boolean }
-): any {
+): ReactElement {
   const positionStyle: React.CSSProperties = {
     position: "fixed",
     width: props.radius * 2,
@@ -35,25 +35,7 @@ export default function Bubble(
         <div
           className="circle"
           style={{
-            animationDelay: "1s",
-            ...animationStyle,
-          }}
-        ></div>
-      )}
-      {props.active && (
-        <div
-          className="circle"
-          style={{
-            animationDelay: "2s",
-            ...animationStyle,
-          }}
-        ></div>
-      )}
-      {props.active && (
-        <div
-          className="circle"
-          style={{
-            animationDelay: "3s",
+            animationDelay: "0.25s",
             ...animationStyle,
           }}
         ></div>

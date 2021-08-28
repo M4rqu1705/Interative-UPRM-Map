@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, ReactElement } from "react";
 import { Card, Content, Container, Form } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Bubble from "./Bubble";
 import buildings from "../data/buildings.json";
 
-function App(): any {
+function App(): ReactElement {
   const defaultMessage =
     "Use la barra de búsqueda o haga click al lugar que quiera identificar.";
   const defaultErrorMessage = "No se encontró ningún edificio con ese nombre.";
@@ -20,7 +20,7 @@ function App(): any {
 
   const [searchResult, setSearchResult] = useState(defaultMessage);
 
-  let imageBoundingRect: any;
+  let imageBoundingRect: DOMRect | undefined;
   const [imageTop, setImageTop] = useState(0);
   const [imageLeft, setImageLeft] = useState(0);
   const [imageWidth, setImageWidth] = useState(0);
@@ -164,7 +164,7 @@ function App(): any {
                 placeholder="Stefani"
                 className="is-size-5"
                 onChange={searchQueryChanged}
-                onKeyDown={(event: any) => {
+                onKeyDown={(event: React.KeyboardEvent<HTMLInputElement>) => {
                   if (event.keyCode === 13) {
                     event.preventDefault();
                     event.currentTarget.blur();
