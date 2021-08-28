@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Button, Card, Content, Container, Form } from "react-bulma-components";
+import { Card, Content, Container, Form } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import "bulma/css/bulma.min.css";
-import "./styles/App.css";
 import Bubble from "./components/Bubble";
+import "bulma/css/bulma.min.css";
+import "bulmaswatch/sandstone/bulmaswatch.min.css";
 
 function App(): any {
   const buildings: Array<BuildingsType> = [
@@ -490,6 +490,7 @@ function App(): any {
 
   function imageWasClicked(event: any) {
     event.preventDefault();
+    updateImageProportions();
 
     const clickTop = event.clientY;
     const clickLeft = event.clientX;
@@ -513,6 +514,7 @@ function App(): any {
   }
 
   function searchQueryChanged(event: React.SyntheticEvent<HTMLInputElement>) {
+    updateImageProportions();
     const standardize = (str: string): string =>
       str
         .toLowerCase()
@@ -586,23 +588,27 @@ function App(): any {
       }
     });
 
-    // if (closestElement.trim().length !== 0)
-    setSearchResult(closestElement);
-    // else setSearchResult(defaultErrorMessage);
+    if (closestElement.trim().length !== 0) setSearchResult(closestElement);
+    else setSearchResult(defaultErrorMessage);
   }
 
   return (
     <Content className="is-flex is-flex-direction-column is-align-items-center">
-      <h1 className="mt-4 mx-2">Mapa Interactivo UPRM</h1>
+      <h1 className="mt-4 mx-2 is-size-1-desktop is-size-3-touch ">
+        Mapa Interactivo UPRM
+      </h1>
       <Card className="p-4 mx-a" style={{ width: "100vw", maxWidth: "1000px" }}>
         <form>
           <Form.Field>
-            <Form.Label>Búsqueda</Form.Label>
+            <Form.Label className="is-size-4-touch is-size-2-desktop">
+              Búsqueda
+            </Form.Label>
             <Form.Control className="has-icons-left">
               <Form.Input
                 id="searchInput"
                 type="search"
                 placeholder="Stefani"
+                className="is-size-5"
                 onChange={searchQueryChanged}
                 onKeyDown={(event: any) => {
                   if (event.keyCode === 13) {
@@ -611,8 +617,12 @@ function App(): any {
                   }
                 }}
               />
-              <span className="icon is-small is-left">
-                <FontAwesomeIcon icon={faSearch} />
+
+              <span className="icon is-large is-left">
+                <FontAwesomeIcon
+                  transform="grow-12 down-6 right-6"
+                  icon={faSearch}
+                />
               </span>
             </Form.Control>
           </Form.Field>
@@ -640,7 +650,7 @@ function App(): any {
           />
 
           <Container style={{ margin: "1rem" }}>
-            <p>{searchResult}</p>
+            <p className="is-size-3">{searchResult}</p>
           </Container>
         </Card.Content>
       </Card>
