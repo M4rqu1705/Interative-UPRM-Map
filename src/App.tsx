@@ -20,7 +20,7 @@ function App(): any {
       left: 24.71,
       top: 20.7,
       radius: 2,
-      keywords: ["2", "ae"],
+      keywords: ["2", "ae", "admi"],
     },
     {
       name: "Almacén del CID",
@@ -41,7 +41,7 @@ function App(): any {
       left: 79.21,
       top: 28.23,
       radius: 2,
-      keywords: ["5"],
+      keywords: ["5", "sea grant"],
     },
     {
       name: "Antigua Pista Atlética",
@@ -69,7 +69,7 @@ function App(): any {
       left: 65.18,
       top: 28.23,
       radius: 2,
-      keywords: ["9", "b"],
+      keywords: ["9", "b", "biol"],
     },
     {
       name: "Centro de Cuido Diurno",
@@ -104,14 +104,14 @@ function App(): any {
       left: 35.44,
       top: 62.87,
       radius: 2,
-      keywords: ["14", "cm"],
+      keywords: ["14", "cm", "coliseo"],
     },
     {
       name: "Complejo de Tennis 2010",
       left: 12.21,
       top: 43.63,
       radius: 2,
-      keywords: ["15"],
+      keywords: ["15", "tenis"],
     },
     {
       name: "Cuarto Limpio (CID)",
@@ -125,7 +125,7 @@ function App(): any {
       left: 18.92,
       top: 37.64,
       radius: 2,
-      keywords: ["17"],
+      keywords: ["17", "piscina", "piscinas"],
     },
     {
       name: "Decanato de Estudiantes (Asistencia Económica / Calidad de Vida / Dept. de Consejería y Servicios Psicológicos)",
@@ -144,7 +144,7 @@ function App(): any {
       left: 35.68,
       top: 35.67,
       radius: 2,
-      keywords: ["19"],
+      keywords: ["19", "edificios y terrenos", "edificios", "terrenos"],
     },
     {
       name: "Edificio Sánchez Hidalgo (DECEP / PpMES / Economía)",
@@ -158,7 +158,7 @@ function App(): any {
       left: 7.95,
       top: 32.34,
       radius: 2,
-      keywords: ["21", "dormitorio atletas"],
+      keywords: ["21"],
     },
     {
       name: "Edificio B (Adm. Pequeños Negocios / Ofic. Adm.)",
@@ -207,7 +207,7 @@ function App(): any {
       left: 73.47,
       top: 67.49,
       radius: 2,
-      keywords: ["28", "c"],
+      keywords: ["28", "c", "celis"],
     },
     {
       name: "Edificio Luis Monzón",
@@ -242,7 +242,7 @@ function App(): any {
       left: 49.09,
       top: 53.21,
       radius: 2,
-      keywords: ["33", "ee"],
+      keywords: ["33", "ee", "enfermeria"],
     },
     {
       name: "Canchas Racquetball 2010",
@@ -270,14 +270,14 @@ function App(): any {
       left: 72.84,
       top: 44.57,
       radius: 2,
-      keywords: ["37", "f"],
+      keywords: ["37", "f", "fisica", "geologia"],
     },
     {
       name: "Gimnasio Ángel F. Espada",
       left: 44.59,
       top: 65.53,
       radius: 2,
-      keywords: ["38", "ge"],
+      keywords: ["38", "ge", "espada"],
     },
     {
       name: "Ofic. en Remodelación Guardia Universitaria",
@@ -298,7 +298,7 @@ function App(): any {
       left: 51.82,
       top: 19.93,
       radius: 2,
-      keywords: ["41", "ci"],
+      keywords: ["41", "ci", "civil"],
     },
     {
       name: "Edificio Ingeniería Industrial",
@@ -347,7 +347,7 @@ function App(): any {
       left: 72.56,
       top: 24.47,
       radius: 2,
-      keywords: ["48"],
+      keywords: ["48", "litoral"],
     },
     {
       name: "MuSA (Museo y Senado Académico)",
@@ -567,14 +567,17 @@ function App(): any {
     });
     if (foundKeyword) return;
 
-    // Otherwise find match with the longest common subsequence
+    // Otherwise find match with the smallest Damerau Leveshtein Distance
     let closestElement = "(0) ";
     let closestScore = Number.MAX_SAFE_INTEGER;
 
     buildings.forEach((element, idx) => {
-      const elementName = standardize(element.name);
+      let elementName = standardize(element.name);
+      let score = 0;
 
-      const score =
+      if (elementName.includes("(") && elementName.split("(")[1].length > 10)
+        elementName = elementName.split("(")[0].trim();
+      score =
         DamerauLeveshteinDistance(query, elementName) / elementName.length;
 
       if (score < closestScore) {
@@ -648,3 +651,4 @@ function App(): any {
 export default App;
 
 // Thanks to https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm
+// Thanks to https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
