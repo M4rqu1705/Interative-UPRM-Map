@@ -10,17 +10,21 @@ function App(): any {
     "Use la barra de búsqueda o haga click al lugar que quiera identificar.";
   const defaultErrorMessage = "No se encontró ningún edificio con ese nombre.";
 
+  // Helper function to put everything in lower-case and remove accents
+  function standardize(str: string) {
+    return str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
   const [searchResult, setSearchResult] = useState(defaultMessage);
 
-  let imageBoundingRect = document
-    ?.getElementById("Mapa-UPRM")
-    ?.getBoundingClientRect();
-  const [imageTop, setImageTop] = useState(imageBoundingRect?.top || 0);
-  const [imageLeft, setImageLeft] = useState(imageBoundingRect?.left || 0);
-  const [imageWidth, setImageWidth] = useState(imageBoundingRect?.width || 0);
-  const [imageHeight, setImageHeight] = useState(
-    imageBoundingRect?.height || 0
-  );
+  let imageBoundingRect: any;
+  const [imageTop, setImageTop] = useState(0);
+  const [imageLeft, setImageLeft] = useState(0);
+  const [imageWidth, setImageWidth] = useState(0);
+  const [imageHeight, setImageHeight] = useState(0);
 
   function updateImageProportions() {
     imageBoundingRect = document
@@ -32,13 +36,14 @@ function App(): any {
     setImageWidth(imageBoundingRect?.width || 0);
     setImageHeight(imageBoundingRect?.height || 0);
   }
+  // updateImageProportions();
 
-  window.addEventListener("load", updateImageProportions);
-  window.addEventListener("zoom", updateImageProportions);
-  window.addEventListener("orientationchange", updateImageProportions);
-  window.addEventListener("scroll", updateImageProportions);
+  // Add event listeners to update image size and position state
+  ["load", "zoom", "orientationchange", "scroll"].forEach((event: string) =>
+    window.addEventListener(event, updateImageProportions)
+  );
 
-  function imageWasClicked(event: any) {
+  function imageWasClicked(event: React.MouseEvent<HTMLImageElement>) {
     event.preventDefault();
     updateImageProportions();
 
@@ -63,13 +68,9 @@ function App(): any {
     });
   }
 
-  function searchQueryChanged(event: React.SyntheticEvent<HTMLInputElement>) {
+  function searchQueryChanged(event: React.ChangeEvent<HTMLInputElement>) {
+    event.preventDefault();
     updateImageProportions();
-    const standardize = (str: string): string =>
-      str
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "");
 
     function DamerauLeveshteinDistance(a: string, b: string): number {
       const d: Array<Array<number>> = [];
