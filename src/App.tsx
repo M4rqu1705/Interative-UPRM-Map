@@ -472,7 +472,7 @@ function App(): any {
     imageBoundingRect?.height || 0
   );
 
-  const updateImageProportions = () => {
+  function updateImageProportions() {
     imageBoundingRect = document
       ?.getElementById("Mapa-UPRM")
       ?.getBoundingClientRect();
@@ -481,14 +481,33 @@ function App(): any {
     setImageLeft(imageBoundingRect?.left || 0);
     setImageWidth(imageBoundingRect?.width || 0);
     setImageHeight(imageBoundingRect?.height || 0);
-  };
+  }
 
   window.addEventListener("load", updateImageProportions);
   window.addEventListener("zoom", updateImageProportions);
   window.addEventListener("orientationchange", updateImageProportions);
   window.addEventListener("scroll", updateImageProportions);
 
-  const imageWasClicked = (event: any) => {
+  function LCS(a: string, b: string): number {
+    const c: Array<Array<number>> = [];
+
+    for (let i = 0; i <= a.length; i++) {
+      const temp = [];
+      for (let j = 0; j <= b.length; j++) temp.push(0);
+      c.push(temp);
+    }
+
+    for (let i = 1; i <= a.length; i++) {
+      for (let j = 1; j <= b.length; j++) {
+        if (a[i - 1] === b[j - 1]) c[i][j] = c[i - 1][j - 1] + 1;
+        else c[i][j] = Math.max(c[i][j - 1], c[i - 1][j]);
+      }
+    }
+
+    return c[a.length][b.length] || 0;
+  }
+
+  function imageWasClicked(event: any) {
     event.preventDefault();
 
     const clickTop = event.clientY;
@@ -510,11 +529,9 @@ function App(): any {
         }
       }
     });
-  };
+  }
 
-  const searchQueryChanged = (
-    event: React.SyntheticEvent<HTMLInputElement>
-  ) => {
+  function searchQueryChanged(event: React.SyntheticEvent<HTMLInputElement>) {
     const query = event.currentTarget.value
       .toLowerCase()
       .normalize("NFD")
@@ -525,6 +542,7 @@ function App(): any {
       return;
     }
 
+    // First make the most to match keywords
     let foundKeyword = false;
     buildings.forEach((element, idx) => {
       if (element.keywords.includes(query)) {
@@ -535,25 +553,19 @@ function App(): any {
     });
     if (foundKeyword) return;
 
+    // Otherwise find match with the longest common subsequence
     let closestElement = "";
-    let closestScore = 0;
+    let closestScore = Number.MIN_SAFE_INTEGER;
 
     buildings.forEach((element, idx) => {
-      let queue = query.split("");
       const elementName = element.name
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "");
-      let score = 0;
 
-      for (let i = 0; i < elementName.length && queue.length > 0; i++) {
-        const char = elementName[i];
+      const score = LCS(query, elementName);
 
-        if (char === queue[0]) {
-          queue = queue.slice(1);
-          score++;
-        }
-      }
+      // console.log(`(${idx + 1}) ${element.name} -> ${score}`);
 
       if (score > closestScore) {
         closestElement = `(${idx + 1}) ${element.name}`;
@@ -561,9 +573,10 @@ function App(): any {
       }
     });
 
-    if (closestScore !== 0) setSearchResult(closestElement);
-    else setSearchResult(defaultErrorMessage);
-  };
+    // if (closestElement.trim().length !== 0)
+    setSearchResult(closestElement);
+    // else setSearchResult(defaultErrorMessage);
+  }
 
   return (
     <Content className="is-flex is-flex-direction-column is-align-items-center">
@@ -574,6 +587,7 @@ function App(): any {
             <Form.Label>Búsqueda</Form.Label>
             <Form.Control className="has-icons-left">
               <Form.Input
+                id="searchInput"
                 type="search"
                 placeholder="Stefani"
                 onChange={searchQueryChanged}
@@ -622,3 +636,5 @@ function App(): any {
 }
 
 export default App;
+
+// Thanks to https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm
