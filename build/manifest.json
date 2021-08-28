@@ -1,0 +1,18 @@
+{
+  "short_name": "Mapa Interactivo RUM",
+  "name": "Mapa interactivo de la Universidad de Puerto Rico, Recinto de Mayagüez.",
+  "icons": [
+    {
+      "src": "assets/Icono_Huella.webp",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/Mapa_UPRM.webp",
+      "type": "image/webp"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#009A44",
+  "background_color": "#ffffff"
+}
