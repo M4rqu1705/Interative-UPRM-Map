@@ -1,5 +1,5 @@
 import React, { useState, ReactElement } from "react";
-import { Card, Content, Container, Form } from "react-bulma-components";
+import { Card, Content, Container, Form, Footer } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Bubble from "./Bubble";
@@ -144,8 +144,8 @@ function App(): ReactElement {
   }
 
   return (
-    <Content className="is-flex is-flex-direction-column is-align-items-center">
-      <h1 className="mt-4 mx-2 is-size-1-desktop is-size-3-touch has-text-white">
+    <Content className="">
+      <h1 className="my-5 is-size-1-desktop is-size-3-touch has-text-white has-text-centered">
         Mapa Interactivo UPRM
       </h1>
       <Card
@@ -207,6 +207,18 @@ function App(): ReactElement {
             <p className="is-size-3-desktop is-size-5-touch">{searchResult}</p>
           </Container>
         </Card.Content>
+        <Card.Footer className="is-flex is-flex-direction-column is-align-items-flex-start p-5">
+          <h4>Enlaces útiles</h4>
+          <a className="is-size-5-desktop" href="https://www.uprm.edu/portada/">
+            Portada UPRM
+          </a>
+          <a
+            className="is-size-5-desktop"
+            href="https://www.uprm.edu/portales/mapa/"
+          >
+            Mapa oficial UPRM
+          </a>
+        </Card.Footer>
       </Card>
     </Content>
   );
