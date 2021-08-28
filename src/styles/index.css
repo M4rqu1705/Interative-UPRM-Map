@@ -10,6 +10,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 163, 79, 1) 0%,
+    rgba(9, 93, 45, 1) 100%
+  );
 }
 
 code {

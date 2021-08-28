@@ -594,10 +594,13 @@ function App(): any {
 
   return (
     <Content className="is-flex is-flex-direction-column is-align-items-center">
-      <h1 className="mt-4 mx-2 is-size-1-desktop is-size-3-touch ">
+      <h1 className="mt-4 mx-2 is-size-1-desktop is-size-3-touch has-text-white">
         Mapa Interactivo UPRM
       </h1>
-      <Card className="p-4 mx-a" style={{ width: "100vw", maxWidth: "1000px" }}>
+      <Card
+        className="py-4 px-5 mx-a"
+        style={{ width: "100vw", maxWidth: "1000px" }}
+      >
         <form>
           <Form.Field>
             <Form.Label className="is-size-4-touch is-size-2-desktop">
@@ -650,7 +653,7 @@ function App(): any {
           />
 
           <Container style={{ margin: "1rem" }}>
-            <p className="is-size-3">{searchResult}</p>
+            <p className="is-size-3-desktop is-size-5-touch">{searchResult}</p>
           </Container>
         </Card.Content>
       </Card>
