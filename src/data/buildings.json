@@ -1,129 +1,160 @@
 [
   {
-    "name": "Taller de Arte en Remodelación",
+    "title": "",
+    "search_terms": [""],
+    "left": 0,
+    "top": 0,
+    "radius": 0,
+    "literal_matches": []
+  },
+  {
+    "title": "Taller de Arte en Remodelación",
+    "search_terms": ["taller de arte en remodelacion"],
     "left": 45.21,
     "top": 46.19,
     "radius": 2,
-    "keywords": ["1"]
+    "literal_matches": ["1"]
   },
   {
-    "name": "Administración de Empresas",
+    "title": "Administración de Empresas",
+    "search_terms": ["administracion de empresas", "empresas"],
     "left": 24.71,
     "top": 20.7,
     "radius": 2,
-    "keywords": ["2", "ae", "admi"]
+    "literal_matches": ["2", "ae", "admi"]
   },
   {
-    "name": "Almacén del CID",
+    "title": "Almacén del CID",
+    "search_terms": ["almacen cid", "almacen del cid"],
     "left": 84.2,
     "top": 29.6,
     "radius": 2,
-    "keywords": ["3"]
+    "literal_matches": ["3"]
   },
   {
-    "name": "Almacén Obras de MuSA",
+    "title": "Almacén Obras de MuSA",
+    "search_terms": ["almacen obras musa"],
     "left": 61.25,
     "top": 82.72,
     "radius": 2,
-    "keywords": ["4"]
+    "literal_matches": ["4"]
   },
   {
-    "name": "Antiguo Centro Nuclear (varios programas incluyendo Sea Grant)",
+    "title": "Antiguo Centro Nuclear (varios programas incluyendo Sea Grant)",
+    "search_terms": ["centro nuclear", "antiguo centro nuclear", "sea grant"],
     "left": 79.21,
     "top": 28.23,
     "radius": 2,
-    "keywords": ["5", "sea grant"]
+    "literal_matches": ["5"]
   },
   {
-    "name": "Antigua Pista Atlética",
+    "title": "Antigua Pista Atlética",
+    "search_terms": ["antigua pista atletica"],
     "left": 86.83,
     "top": 87.0,
     "radius": 2,
-    "keywords": ["6"]
+    "literal_matches": ["6"]
   },
   {
-    "name": "Banda y Orquesta",
+    "title": "Banda y Orquesta",
+    "search_terms": ["banda y orquesta"],
     "left": 81.9,
     "top": 79.73,
     "radius": 2,
-    "keywords": ["7"]
+    "literal_matches": ["7", "banda"]
   },
   {
-    "name": "Biblioteca General",
+    "title": "Biblioteca General",
+    "search_terms": ["biblioteca general"],
     "left": 57.57,
     "top": 62.28,
     "radius": 2,
-    "keywords": ["8"]
+    "literal_matches": ["8", "biblioteca"]
   },
   {
-    "name": "Edificio de Biología",
+    "title": "Edificio de Biología",
+    "search_terms": ["biologia", "edificio de biologia"],
     "left": 65.18,
     "top": 28.23,
     "radius": 2,
-    "keywords": ["9", "b", "biol"]
+    "literal_matches": ["9", "b", "biol"]
   },
   {
-    "name": "Centro de Cuido Diurno",
+    "title": "Centro de Cuido Diurno",
+    "search_terms": ["centro de cuido diurno"],
     "left": 8.81,
     "top": 42.09,
     "radius": 2,
-    "keywords": ["10"]
+    "literal_matches": ["10", "cuido"]
   },
   {
-    "name": "Centro de Estudiantes",
+    "title": "Centro de Estudiantes",
+    "search_terms": ["centro de estudiantes"],
     "left": 66.04,
     "top": 64.33,
     "radius": 2,
-    "keywords": ["11"]
+    "literal_matches": ["11", "centro"]
   },
   {
-    "name": "Central Telefónica",
+    "title": "Central Telefónica",
+    "search_terms": ["central telefónica"],
     "left": 45.26,
     "top": 53.29,
     "radius": 2,
-    "keywords": ["12"]
+    "literal_matches": ["12"]
   },
   {
-    "name": "CISA",
+    "title": "CISA",
+    "search_terms": ["cisa"],
     "left": 79.98,
     "top": 23.27,
     "radius": 2,
-    "keywords": ["13"]
+    "literal_matches": ["13"]
   },
   {
-    "name": "Coliseo Rafael A. Mangual",
+    "title": "Coliseo Rafael A. Mangual",
+    "search_terms": ["mangual", "coliseo mangual", "coliseo rafael a mangual"],
     "left": 35.44,
     "top": 62.87,
     "radius": 2,
-    "keywords": ["14", "cm", "coliseo"]
+    "literal_matches": ["14", "cm", "coliseo", "mangual"]
   },
   {
-    "name": "Complejo de Tennis 2010",
+    "title": "Complejo de Tennis 2010",
+    "search_terms": ["complejo de tenis"],
     "left": 12.21,
     "top": 43.63,
     "radius": 2,
-    "keywords": ["15", "tenis"]
+    "literal_matches": ["15", "tenis", "tennis"]
   },
   {
-    "name": "Cuarto Limpio (CID)",
+    "title": "Cuarto Limpio (CID)",
+    "search_terms": ["cuarto limpio cid"],
     "left": 85.3,
     "top": 32.93,
     "radius": 2,
-    "keywords": ["16"]
+    "literal_matches": ["16"]
   },
   {
-    "name": "Natatorio 2010",
+    "title": "Natatorio 2010",
+    "search_terms": ["natatorio"],
     "left": 18.92,
     "top": 37.64,
     "radius": 2,
-    "keywords": ["17", "piscina", "piscinas"]
+    "literal_matches": ["17", "piscina", "piscinas"]
   },
   {
-    "name": "Decanato de Estudiantes (Asistencia Económica / Calidad de Vida / Dept. de Consejería y Servicios Psicológicos)",
+    "title": "Decanato de Estudiantes (Asistencia Económica / Calidad de Vida / Dept. de Consejería y Servicios Psicológicos)",
+    "search_terms": [
+      "decanato de estudiantes",
+      "asistencia economica",
+      "calidad de vida",
+      "consejeria y servicios psicologicos"
+    ],
     "left": 75.96,
     "top": 78.44,
     "radius": 2,
-    "keywords": [
+    "literal_matches": [
       "18",
       "asistencia economica",
       "calidad de vida",
@@ -131,318 +162,425 @@
     ]
   },
   {
-    "name": "Departamento de Edificios y Terrenos",
+    "title": "Departamento de Edificios y Terrenos",
+    "search_terms": [
+      "edificios y terrenos",
+      "departamento de edificios y terrenos"
+    ],
     "left": 35.68,
     "top": 35.67,
     "radius": 2,
-    "keywords": ["19", "edificios y terrenos", "edificios", "terrenos"]
+    "literal_matches": ["19", "edificios y terrenos", "edificios", "terrenos"]
   },
   {
-    "name": "Edificio Sánchez Hidalgo (DECEP / PpMES / Economía)",
+    "title": "Edificio Sánchez Hidalgo (DECEP / PpMES / Economía)",
+    "search_terms": [
+      "sanchez hidalgo",
+      "edificio sanchez hidalgo",
+      "decep",
+      "ppmes",
+      "economia"
+    ],
     "left": 62.31,
     "top": 47.65,
     "radius": 2,
-    "keywords": ["20", "sh", "decep"]
+    "literal_matches": ["20", "sh", "decep"]
   },
   {
-    "name": "Edificio A (Dormitorio de Atletas)",
+    "title": "Edificio A (Dormitorio de Atletas)",
+    "search_terms": ["edificio a", "dormitorio atletas"],
     "left": 7.95,
     "top": 32.34,
     "radius": 2,
-    "keywords": ["21"]
+    "literal_matches": ["21"]
   },
   {
-    "name": "Edificio B (Adm. Pequeños Negocios / Ofic. Adm.)",
+    "title": "Edificio B (Adm. Pequeños Negocios / Ofic. Adm.)",
+    "search_terms": ["edificio b"],
     "left": 11.78,
     "top": 32.16,
     "radius": 2,
-    "keywords": ["22"]
+    "literal_matches": ["22"]
   },
   {
-    "name": "Edificio C (Oficina de Extensión Agrícola)",
+    "title": "Edificio C (Oficina de Extensión Agrícola)",
+    "search_terms": ["edificio c", "oficina de extension agricola"],
     "left": 6.47,
     "top": 36.18,
     "radius": 2,
-    "keywords": ["23"]
+    "literal_matches": ["23"]
   },
   {
-    "name": "Edificio D",
+    "title": "Edificio D",
+    "search_terms": ["edificio d"],
     "left": 9.43,
     "top": 34.13,
     "radius": 2,
-    "keywords": ["24"]
+    "literal_matches": ["24"]
   },
   {
-    "name": "Edificio Chardón (Estudios Generales)",
+    "title": "Edificio Chardón (Estudios Generales)",
+    "search_terms": ["chardon", "edificio chardon", "estudios generales"],
     "left": 72.7,
     "top": 61.51,
     "radius": 2,
-    "keywords": ["25", "ch"]
+    "literal_matches": ["25", "ch"]
   },
   {
-    "name": "Edificio Jesús T. Piñero (Ciencias Agrícolas)",
+    "title": "Edificio Jesús T. Piñero (Ciencias Agrícolas)",
+    "search_terms": ["pinero", "ciencias agricolas", "edificio jesus t pinero"],
     "left": 51.72,
     "top": 82.89,
     "radius": 2,
-    "keywords": ["26", "p"]
+    "literal_matches": ["26", "p"]
   },
   {
-    "name": "Edificio José de Diego",
+    "title": "Edificio José de Diego",
+    "search_terms": ["de diego", "edificio jose de diego"],
     "left": 70.83,
     "top": 75.79,
     "radius": 2,
-    "keywords": ["27"]
+    "literal_matches": ["27"]
   },
   {
-    "name": "Edificio Luis de Celis (Admisiones - Celis 101 / Registro / Decanato de Artes y Ciencias / Estudios Graduados)",
+    "title": "Edificio Luis de Celis (Admisiones - Celis 101 / Registro / Decanato de Artes y Ciencias / Estudios Graduados)",
+    "search_terms": [
+      "celis",
+      "edificio luis de celis",
+      "admisiones",
+      "registro",
+      "decanato de artes y ciencias",
+      "estudios graduados"
+    ],
     "left": 73.47,
     "top": 67.49,
     "radius": 2,
-    "keywords": ["28", "c", "celis"]
+    "literal_matches": ["28", "c"]
   },
   {
-    "name": "Edificio Luis Monzón",
+    "title": "Edificio Luis Monzón",
+    "search_terms": ["monzon", "edificio luis monzon"],
     "left": 66.14,
     "top": 74.76,
     "radius": 2,
-    "keywords": ["29", "m"]
+    "literal_matches": ["29", "m"]
   },
   {
-    "name": "Edificio Luis Stefani",
+    "title": "Edificio Luis Stefani",
+    "search_terms": ["stefani", "luis stefani", "edificio luis stefani"],
     "left": 78.35,
     "top": 60.14,
     "radius": 2,
-    "keywords": ["30", "s"]
+    "literal_matches": ["30", "s", "inel", "icom"]
   },
   {
-    "name": "Edificio Oficinas de Facultad",
+    "title": "Edificio Oficinas de Facultad",
+    "search_terms": ["oficinas de facultad", "edificio oficinas de facultad"],
     "left": 57.81,
     "top": 51.07,
     "radius": 2,
-    "keywords": ["31"]
+    "literal_matches": ["31", "of"]
   },
   {
-    "name": "Edificio Ramírez de Arellano y Rossell",
+    "title": "Edificio Ramírez de Arellano y Rossell",
+    "search_terms": [
+      "ramirez de arellano y rossell",
+      "edificio ramirez de arellano y rossell"
+    ],
     "left": 3.98,
     "top": 45.25,
     "radius": 2,
-    "keywords": ["32"]
+    "literal_matches": ["32"]
   },
   {
-    "name": "Edificio Josefina Torres Torres (Enfermería)",
+    "title": "Edificio Josefina Torres Torres (Enfermería)",
+    "search_terms": [
+      "enfermeria",
+      "josefina torres torres",
+      "edificio josefina torres torres"
+    ],
     "left": 49.09,
     "top": 53.21,
     "radius": 2,
-    "keywords": ["33", "ee", "enfermeria"]
+    "literal_matches": ["33", "ee"]
   },
   {
-    "name": "Canchas Racquetball 2010",
+    "title": "Canchas de Racquetball 2010",
+    "search_terms": ["racquetball", "canchas racquetball"],
     "left": 14.56,
     "top": 28.06,
     "radius": 2,
-    "keywords": ["34"]
+    "literal_matches": ["34"]
   },
   {
-    "name": "Edificio Terrats (Finanzas y Pagaduría)",
+    "title": "Edificio Terrats (Finanzas y Pagaduría)",
+    "search_terms": ["terrats", "edificio terrats", "finanzas", "pagaduria"],
     "left": 75.91,
     "top": 50.81,
     "radius": 2,
-    "keywords": ["35", "t"]
+    "literal_matches": ["35", "t"]
   },
   {
-    "name": "Finca Alzamora",
+    "title": "Finca Alzamora",
+    "search_terms": ["finca", "finca alzamora"],
     "left": 1.25,
     "top": 37.3,
     "radius": 2,
-    "keywords": ["36", "az"]
+    "literal_matches": ["36", "az"]
   },
   {
-    "name": "Física, Geología y Ciencias Marinas",
+    "title": "Física, Geología y Ciencias Marinas",
+    "search_terms": [
+      "fisica",
+      "geologia",
+      "ciencias marinas",
+      "fisica, geologia y ciencias marinas"
+    ],
     "left": 72.84,
     "top": 44.57,
     "radius": 2,
-    "keywords": ["37", "f", "fisica", "geologia"]
+    "literal_matches": ["37", "f", "fisica", "geologia"]
   },
   {
-    "name": "Gimnasio Ángel F. Espada",
+    "title": "Gimnasio Ángel F. Espada",
+    "search_terms": [
+      "gimnasio",
+      "espada",
+      "gimnasio espada",
+      "gimnasio angel f espada"
+    ],
     "left": 44.59,
     "top": 65.53,
     "radius": 2,
-    "keywords": ["38", "ge", "espada"]
+    "literal_matches": ["38", "ge", "espada"]
   },
   {
-    "name": "Ofic. en Remodelación Guardia Universitaria",
+    "title": "Ofic. en Remodelación Guardia Universitaria",
+    "search_terms": [
+      "oficina remodelacion guardia universitaria",
+      "oficina en remodelacion de la guardia universitaria"
+    ],
     "left": 75,
     "top": 49.1,
     "radius": 2,
-    "keywords": ["39"]
+    "literal_matches": ["39"]
   },
   {
-    "name": "Imprenta y Artes Plásticas",
+    "title": "Imprenta y Artes Plásticas",
+    "search_terms": [
+      "imprenta",
+      "artes plasticas",
+      "imprenta y artes plasticas"
+    ],
     "left": 14.99,
     "top": 20.27,
     "radius": 2,
-    "keywords": ["40"]
+    "literal_matches": ["40"]
   },
   {
-    "name": "Edificio Ingeniería Civil",
+    "title": "Edificio Ingeniería Civil",
+    "search_terms": ["ingenieria civil", "edificio ingenieria civil"],
     "left": 51.82,
     "top": 19.93,
     "radius": 2,
-    "keywords": ["41", "ci", "civil"]
+    "literal_matches": ["41", "ci", "civil", "inci"]
   },
   {
-    "name": "Edificio Ingeniería Industrial",
+    "title": "Edificio Ingeniería Industrial",
+    "search_terms": ["ingenieria industrial", "edificio ingenieria industrial"],
     "left": 72.32,
     "top": 51.67,
     "radius": 2,
-    "keywords": ["42", "ii"]
+    "literal_matches": ["42", "ii", "inin"]
   },
   {
-    "name": "Edificio Antonio Luchetti (Ingeniería Mecánica)",
+    "title": "Edificio Antonio Luchetti (Ingeniería Mecánica)",
+    "search_terms": [
+      "luchetti",
+      "antonio luchetti",
+      "edificio antonio luchetti"
+    ],
     "left": 82.04,
     "top": 70.66,
     "radius": 2,
-    "keywords": ["43", "l"]
+    "literal_matches": ["43", "l", "inme"]
   },
   {
-    "name": "Edificio Ingeniería Química",
+    "title": "Edificio Ingeniería Química",
+    "search_terms": ["ingenieria quimica", "edificio ingenieria quimica"],
     "left": 47.27,
     "top": 26.69,
     "radius": 2,
-    "keywords": ["44", "iq"]
+    "literal_matches": ["44", "iq", "inqu"]
   },
   {
-    "name": "Museo de Vehículos Solares",
+    "title": "Museo de Vehículos Solares",
+    "search_terms": ["museo vehiculos solares", "museo de vehiculos solares"],
     "left": 76.87,
     "top": 24.21,
     "radius": 2,
-    "keywords": ["45"]
+    "literal_matches": ["45"]
   },
   {
-    "name": "Laboratorio Ingeniería Agrícola",
+    "title": "Laboratorio Ingeniería Agrícola",
+    "search_terms": ["laboratorio ingenieria agricola"],
     "left": 41.71,
     "top": 40.72,
     "radius": 2,
-    "keywords": ["46"]
+    "literal_matches": ["46"]
   },
   {
-    "name": "Laboratorio de Vehículos Solares",
+    "title": "Laboratorio de Vehículos Solares",
+    "search_terms": [
+      "laboratorio vehiculos solares",
+      "laboratorio de vehiculos solares"
+    ],
     "left": 78.07,
     "top": 20.62,
     "radius": 2,
-    "keywords": ["47"]
+    "literal_matches": ["47"]
   },
   {
-    "name": "Centro Interdisciplinario de Estudios del Litoral",
+    "title": "Centro Interdisciplinario de Estudios del Litoral",
+    "search_terms": [
+      "litoral",
+      "estudios del litoral",
+      "centro interdisciplinario de estudios del litoral"
+    ],
     "left": 72.56,
     "top": 24.47,
     "radius": 2,
-    "keywords": ["48", "litoral"]
+    "literal_matches": ["48"]
   },
   {
-    "name": "MuSA (Museo y Senado Académico)",
+    "title": "MuSA (Museo y Senado Académico)",
+    "search_terms": ["musa", "museo", "senado academico"],
     "left": 59.1,
     "top": 77.07,
     "radius": 2,
-    "keywords": ["49"]
+    "literal_matches": ["49"]
   },
   {
-    "name": "Nueva Pista Atlética",
+    "title": "Nueva Pista Atlética",
+    "search_terms": ["nueva pista atletica"],
     "left": 29.12,
     "top": 49.44,
     "radius": 2,
-    "keywords": ["50"]
+    "literal_matches": ["50"]
   },
   {
-    "name": "CID (Oficina Administrativa)",
+    "title": "CID (Oficina Administrativa)",
+    "search_terms": ["cid"],
     "left": 81.03,
     "top": 35.41,
     "radius": 2,
-    "keywords": ["51"]
+    "literal_matches": ["51"]
   },
   {
-    "name": "Ofic. Campus Verde (Casa Solar 2005)",
+    "title": "Ofic. Campus Verde (Casa Solar 2005)",
+    "search_terms": ["campus verde", "oficina campus verde", "casa solar"],
     "left": 75.19,
     "top": 29.43,
     "radius": 2,
-    "keywords": ["52"]
+    "literal_matches": ["52"]
   },
   {
-    "name": "Programa Rehabilitación Vocacional",
+    "title": "Programa Rehabilitación Vocacional",
+    "search_terms": [
+      "rehabilitacion vocacional",
+      "programa de rehabilitacion vocacional"
+    ],
     "left": 61.54,
     "top": 40.21,
     "radius": 2,
-    "keywords": ["53"]
+    "literal_matches": ["53"]
   },
   {
-    "name": "OMCA",
+    "title": "OMCA",
+    "search_terms": ["omca"],
     "left": 64.8,
     "top": 42.43,
     "radius": 2,
-    "keywords": ["54"]
+    "literal_matches": ["54"]
   },
   {
-    "name": "Edificio de Química",
+    "title": "Edificio de Química",
+    "search_terms": ["quimica", "edificio de quimica"],
     "left": 53.54,
     "top": 44.05,
     "radius": 2,
-    "keywords": ["55", "q"]
+    "literal_matches": ["55", "q"]
   },
   {
-    "name": "Red Sísmica",
+    "title": "Red Sísmica",
+    "search_terms": ["red sismica"],
     "left": 67.0,
     "top": 41.83,
     "radius": 2,
-    "keywords": ["56"]
+    "literal_matches": ["56"]
   },
   {
-    "name": "Residencia del Rector",
+    "title": "Residencia del Rector",
+    "search_terms": ["residencia rector", "residencia del rector"],
     "left": 64.03,
     "top": 83.83,
     "radius": 2,
-    "keywords": ["57"]
+    "literal_matches": ["57"]
   },
   {
-    "name": "R.O.T.C.",
+    "title": "R.O.T.C.",
+    "search_terms": ["rotc"],
     "left": 80.51,
     "top": 64.33,
     "radius": 2,
-    "keywords": ["58"]
+    "literal_matches": ["58"]
   },
   {
-    "name": "Sendero de los ejercicios",
+    "title": "Sendero de los ejercicios",
+    "search_terms": ["sendero ejercicios", "ejercicio", "sendero"],
     "left": 25.0,
     "top": 78.61,
     "radius": 2,
-    "keywords": ["59"]
+    "literal_matches": ["59"]
   },
   {
-    "name": "Servicios Médicos y Sala de Emergencia",
+    "title": "Servicios Médicos y Sala de Emergencia",
+    "search_terms": ["servicios medicos", "sala de emergencia"],
     "left": 59.15,
     "top": 70.49,
     "radius": 2,
-    "keywords": ["60"]
+    "literal_matches": ["60", "emergencia", "servicios medicos"]
   },
   {
-    "name": "Taller de Artes Gráficas",
+    "title": "Taller de Artes Gráficas",
+    "search_terms": ["artes graficas", "taller de artes graficas"],
     "left": 46.7,
     "top": 43.63,
     "radius": 2,
-    "keywords": ["61"]
+    "literal_matches": ["61"]
   },
   {
-    "name": "Instalaciones Temporeras Guardia Universitaria",
+    "title": "Instalaciones Temporeras Guardia Universitaria",
+    "search_terms": [
+      "guardia universitaria",
+      "instalaciones temporeras guardia universitaria"
+    ],
     "left": 44.25,
     "top": 48.5,
     "radius": 2,
-    "keywords": ["62"]
+    "literal_matches": ["62"]
   },
   {
-    "name": "Salón Mezzanine",
+    "title": "Salón Mezzanine",
+    "search_terms": [
+      "mezzanine",
+      "salon mezzanine",
+      "mezanine",
+      "salon mezanine"
+    ],
     "left": 8.96,
     "top": 46.96,
     "radius": 2,
-    "keywords": ["63"]
+    "literal_matches": ["63"]
   }
 ]

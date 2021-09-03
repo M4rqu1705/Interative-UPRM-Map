@@ -1,8 +1,10 @@
 /// <reference types="react-scripts" />
+
 interface BuildingsType {
   left: number;
   top: number;
   radius: number;
-  name: string;
-  keywords: Array<string>;
+  title: string;
+  search_terms: Array<string>;
+  literal_matches: Array<string>;
 }

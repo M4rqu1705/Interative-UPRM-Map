@@ -2,9 +2,12 @@ import React, { ReactElement } from "react";
 import "bulma/css/bulma.min.css";
 import "../styles/Bubble.css";
 
-export default function Bubble(
-  props: BuildingsType & { active: boolean }
-): ReactElement {
+export default function Bubble(props: {
+  top: number;
+  left: number;
+  radius: number;
+  active: boolean;
+}): ReactElement {
   const positionStyle: React.CSSProperties = {
     position: "fixed",
     width: props.radius * 2,

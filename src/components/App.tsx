@@ -20,11 +20,18 @@ function App(): ReactElement {
     return str
       .toLowerCase()
       .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+  }
+
+  function buildResultMessage(idx: number) {
+    if (idx === 0) return defaultMessage;
+    else if (idx === -1) return defaultErrorMessage;
+    return `(${idx}) ${buildings[idx].title}`;
   }
 
   // State variables
-  const [searchResult, setSearchResult] = useState(defaultMessage);
+  const [searchResult, setSearchResult] = useState(0);
 
   let imageBoundingRect: DOMRect | undefined;
   const [imageTop, setImageTop] = useState(0);
@@ -59,20 +66,12 @@ function App(): ReactElement {
     const clickLeft = event.clientX;
 
     buildings.forEach((element, idx: number) => {
-      if (
-        Math.pow(element.top - ((clickTop - imageTop) / imageHeight) * 100, 2) +
-          Math.pow(
-            element.left - ((clickLeft - imageLeft) / imageWidth) * 100,
-            2
-          ) <=
-        Math.pow(element.radius, 2)
-      ) {
-        if (element.name.endsWith(searchResult)) {
-          setSearchResult(defaultMessage);
-        } else {
-          setSearchResult(`(${idx + 1}) ${element.name}`);
-        }
-      }
+      const dTop = element.top - ((clickTop - imageTop) / imageHeight) * 100;
+      const dLeft = element.left - ((clickLeft - imageLeft) / imageWidth) * 100;
+      const radius = element.radius;
+
+      if (dTop * dTop + dLeft * dLeft <= radius * radius)
+        setSearchResult(searchResult === idx ? 0 : idx);
     });
   }
 
@@ -112,47 +111,48 @@ function App(): ReactElement {
 
     const query = standardize(event.currentTarget.value);
 
-    if (query.length == 0) {
-      setSearchResult(defaultMessage);
-      return;
-    }
+    // Return early if query is empty
+    if (query.length == 0) return setSearchResult(0);
 
-    // First make the most to match keywords
-    let foundKeyword = false;
-    buildings.forEach((element, idx) => {
-      if (element.keywords.includes(query)) {
-        foundKeyword = true;
-        setSearchResult(`(${idx + 1}) ${element.name}`);
-        return;
-      }
-    });
-    if (foundKeyword) return;
+    // First make the most to match `literal_matches`
+    if (
+      !buildings.every((element: BuildingsType, idx: number) => {
+        if (element.literal_matches.includes(query)) {
+          setSearchResult(idx);
+          return false;
+        }
+        return true;
+      })
+    )
+      return;
 
     // Otherwise find match with the smallest Damerau Leveshtein Distance
-    let closestElement = "(0) ";
+    let closestElement = -1;
     let closestScore = Number.MAX_SAFE_INTEGER;
 
-    buildings.forEach((element, idx) => {
-      let elementName = standardize(element.name);
-      let score = 0;
+    buildings.forEach((element: BuildingsType, idx: number) => {
+      element.search_terms.forEach((term: string) => {
+        const standardizedTerm = standardize(term);
+        const score =
+          DamerauLeveshteinDistance(query, standardizedTerm) /
+          standardizedTerm.length;
 
-      if (elementName.includes("(") && elementName.split("(")[1].length > 10)
-        elementName = elementName.split("(")[0].trim();
-      score =
-        DamerauLeveshteinDistance(query, elementName) / elementName.length;
-
-      if (score < closestScore) {
-        closestElement = `(${idx + 1}) ${element.name}`;
-        closestScore = score;
-      }
+        if (score < closestScore) {
+          closestElement = idx;
+          closestScore = score;
+        }
+      });
     });
 
-    if (closestElement.trim().length !== 0) setSearchResult(closestElement);
-    else setSearchResult(defaultErrorMessage);
+    setSearchResult(closestElement);
   }
 
   return (
     <Content>
+      {/*  _  _             _          */}
+      {/* | || |___ __ _ __| |___ _ _  */}
+      {/* | __ / -_) _` / _` / -_) '_| */}
+      {/* |_||_\___\__,_\__,_\___|_|   */}
       <h1 className="my-5 is-size-1-desktop is-size-3-touch has-text-white has-text-centered">
         Mapa Interactivo UPRM
       </h1>
@@ -160,6 +160,11 @@ function App(): ReactElement {
         className="py-4 px-5 mx-a"
         style={{ width: "100vw", maxWidth: "1000px" }}
       >
+        {/*  _____        _     _                _    */}
+        {/* |_   _|____ _| |_  (_)_ _  _ __ _  _| |_  */}
+        {/*   | |/ -_) \ /  _| | | ' \| '_ \ || |  _| */}
+        {/*   |_|\___/_\_\\__| |_|_||_| .__/\_,_|\__| */}
+        {/*                           |_|             */}
         <form>
           <Form.Field>
             <Form.Label className="is-size-4-touch is-size-2-desktop">
@@ -194,15 +199,18 @@ function App(): ReactElement {
           {buildings.map((element: BuildingsType, idx: number) => (
             <Bubble
               key={idx}
-              name={element.name}
-              keywords={element.keywords}
               top={(element.top / 100.0) * imageHeight + imageTop}
               left={(element.left / 100.0) * imageWidth + imageLeft}
               radius={(element.radius / 100.0) * imageWidth}
-              active={searchResult.endsWith(element.name)}
+              active={idx === searchResult}
             />
           ))}
 
+          {/* __  __            */}
+          {/* |  \/  |__ _ _ __  */}
+          {/* | |\/| / _` | '_ \ */}
+          {/* |_|  |_\__,_| .__/ */}
+          {/*             |_|    */}
           <Card.Image
             id="Mapa-UPRM"
             style={{ padding: 0, margin: "1rem" }}
@@ -211,10 +219,22 @@ function App(): ReactElement {
             onClick={imageWasClicked}
           />
 
+          {/* ___             _ _     __  __                           */}
+          {/* | _ \___ ____  _| | |_  |  \/  |___ ______ __ _ __ _ ___  */}
+          {/* |   / -_|_-< || | |  _| | |\/| / -_|_-<_-</ _` / _` / -_) */}
+          {/* |_|_\___/__/\_,_|_|\__| |_|  |_\___/__/__/\__,_\__, \___| */}
+          {/*                                                |___/      */}
           <Container style={{ margin: "1rem" }}>
-            <p className="is-size-3-desktop is-size-5-touch">{searchResult}</p>
+            <p className="is-size-3-desktop is-size-5-touch">
+              {buildResultMessage(searchResult)}
+            </p>
           </Container>
 
+          {/*     ___                   _                  */}
+          {/*    |   \ _ _ ___ _ __  __| |_____ __ ___ _   */}
+          {/*    | |) | '_/ _ \ '_ \/ _` / _ \ V  V / ' \  */}
+          {/*    |___/|_| \___/ .__/\__,_\___/\_/\_/|_||_| */}
+          {/*                 |_|                          */}
           <Container
             className="p-3 my-4"
             style={{
@@ -244,9 +264,9 @@ function App(): ReactElement {
                 marginTop: listExpanded ? "1rem" : "0",
               }}
             >
-              {buildings.map((element: BuildingsType, idx: number) => (
+              {buildings.slice(1).map((element: BuildingsType, idx: number) => (
                 <p
-                  key={idx}
+                  key={idx + 1}
                   className="is-size-5 m-1"
                   style={{
                     display: listExpanded ? "block" : "none",
@@ -254,16 +274,21 @@ function App(): ReactElement {
                   }}
                   onClick={(event: React.MouseEvent<HTMLParagraphElement>) => {
                     event.preventDefault();
-                    setSearchResult(`(${idx + 1}) ${element.name}`);
+                    setSearchResult(idx + 1);
                     window.scroll({ top: 0, left: 0, behavior: "smooth" });
                   }}
                 >
-                  {idx + 1}. {element.name}
+                  {idx + 1}. {element.title}
                 </p>
               ))}
             </div>
           </Container>
         </Card.Content>
+
+        {/*  ___         _            */}
+        {/* | __|__  ___| |_ ___ _ _  */}
+        {/* | _/ _ \/ _ \  _/ -_) '_| */}
+        {/* |_|\___/\___/\__\___|_|   */}
 
         <Card.Footer className="is-flex is-flex-direction-column is-align-items-flex-start p-5">
           <h4>Enlaces útiles</h4>
@@ -275,6 +300,12 @@ function App(): ReactElement {
             href="https://www.uprm.edu/portales/mapa/"
           >
             Mapa oficial UPRM
+          </a>
+          <a
+            className="is-size-5-desktop"
+            href="https://goo.gl/maps/wYpcpiT2PWVDox4c7"
+          >
+            Abrir UPRM en Google Maps
           </a>
         </Card.Footer>
       </Card>
