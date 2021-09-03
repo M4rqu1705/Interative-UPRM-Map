@@ -194,11 +194,11 @@ function App(): ReactElement {
         className="py-4 px-5 mx-a"
         style={{ width: "100vw", maxWidth: "1000px" }}
       >
-        {/*  _____        _     _                _    */}
-        {/* |_   _|____ _| |_  (_)_ _  _ __ _  _| |_  */}
-        {/*   | |/ -_) \ /  _| | | ' \| '_ \ || |  _| */}
-        {/*   |_|\___/_\_\\__| |_|_||_| .__/\_,_|\__| */}
-        {/*                           |_|             */}
+        {/*  _____        _      _                _    */}
+        {/* |_   _|____ _| |_   (_)_ _  _ __ _  _| |_  */}
+        {/*   | |/ -_) \ /  _|  | | ' \| '_ \ || |  _| */}
+        {/*   |_|\___/_\_\\__|  |_|_||_| .__/\_,_|\__| */}
+        {/*                           |_|              */}
         <form>
           <Columns>
             <Columns.Column tablet={{ size: "three-quarters" }}>
@@ -206,6 +206,11 @@ function App(): ReactElement {
                 <Form.Label className="is-size-4-touch is-size-2-desktop">
                   Búsqueda General
                 </Form.Label>
+
+                {/*   ___                       _    ___                  _     */}
+                {/*  / __|___ _ _  ___ _ _ __ _| |  / __| ___ __ _ _ _ __| |_   */}
+                {/* | (_ / -_) ' \/ -_) '_/ _` | |  \__ \/ -_) _` | '_/ _| ' \  */}
+                {/*  \___\___|_||_\___|_| \__,_|_|  |___/\___\__,_|_| \__|_||_| */}
                 <Form.Control className="has-icons-left">
                   <Form.Input
                     type="search"
@@ -221,7 +226,6 @@ function App(): ReactElement {
                       }
                     }}
                   />
-
                   <span className="icon is-large is-left">
                     <FontAwesomeIcon
                       transform="grow-12 down-6 right-6"
@@ -232,6 +236,10 @@ function App(): ReactElement {
               </Form.Field>
             </Columns.Column>
 
+            {/*  ___                   ___                  _     */}
+            {/* | _ \___  ___ _ __    / __| ___ __ _ _ _ __| |_   */}
+            {/* |   / _ \/ _ \ '  \   \__ \/ -_) _` | '_/ _| ' \  */}
+            {/* |_|_\___/\___/_|_|_|  |___/\___\__,_|_| \__|_||_| */}
             <Columns.Column>
               <Form.Label className="is-size-4-touch is-size-2-desktop">
                 Hallar Salón
@@ -298,6 +306,18 @@ function App(): ReactElement {
             <p className="is-size-3-desktop is-size-5-touch">
               {buildResultMessage(searchResult)}
             </p>
+            {searchResult > 0 && (
+              <a
+                className="has-text-primary is-underlined"
+                href={`https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=UPRM+${buildings[
+                  searchResult
+                ].title
+                  .split(" ")
+                  .join("+")}`}
+              >
+                Abrir este lugar en Google Maps
+              </a>
+            )}
           </Container>
 
           {/*     ___                   _                  */}
