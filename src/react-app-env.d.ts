@@ -7,4 +7,5 @@ interface BuildingsType {
   title: string;
   search_terms: Array<string>;
   literal_matches: Array<string>;
+  google_maps_search: string;
 }

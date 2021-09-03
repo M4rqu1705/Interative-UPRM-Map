@@ -311,7 +311,7 @@ function App(): ReactElement {
                 className="has-text-primary is-underlined"
                 href={`https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=UPRM+${buildings[
                   searchResult
-                ].title
+                ].google_maps_search
                   .split(" ")
                   .join("+")}`}
               >
