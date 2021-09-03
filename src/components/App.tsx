@@ -1,9 +1,17 @@
 import React, { useState, ReactElement } from "react";
-import { Card, Content, Container, Form, Button } from "react-bulma-components";
+import {
+  Card,
+  Columns,
+  Content,
+  Container,
+  Form,
+  Button,
+} from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronDown,
   faChevronUp,
+  faHashtag,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import Bubble from "./Bubble";
@@ -147,6 +155,32 @@ function App(): ReactElement {
     setSearchResult(closestElement);
   }
 
+  function roomSearchQueryChanged(event: React.ChangeEvent<HTMLInputElement>) {
+    event.preventDefault();
+    updateImageProportions();
+
+    const query = standardize(event.currentTarget.value);
+
+    // Return early if query is empty
+    if (query.length == 0) return setSearchResult(0);
+
+    const classroomNumberRegex = /^([A-Za-z]+).*$/;
+    const match = classroomNumberRegex.exec(query);
+    const prefix: string = match ? match[1] : "";
+
+    // Return early if classroom prefix was not found
+    if (prefix === "") setSearchResult(-1);
+
+    // Use `literal_matches` to find classroom building
+    buildings.every((element: BuildingsType, idx: number) => {
+      if (element.literal_matches.includes(prefix)) {
+        setSearchResult(idx);
+        return false;
+      }
+      return true;
+    });
+  }
+
   return (
     <Content>
       {/*  _  _             _          */}
@@ -166,33 +200,69 @@ function App(): ReactElement {
         {/*   |_|\___/_\_\\__| |_|_||_| .__/\_,_|\__| */}
         {/*                           |_|             */}
         <form>
-          <Form.Field>
-            <Form.Label className="is-size-4-touch is-size-2-desktop">
-              Búsqueda
-            </Form.Label>
-            <Form.Control className="has-icons-left">
-              <Form.Input
-                id="searchInput"
-                type="search"
-                placeholder="Stefani"
-                className="is-size-5"
-                onChange={searchQueryChanged}
-                onKeyDown={(event: React.KeyboardEvent<HTMLInputElement>) => {
-                  if (event.keyCode === 13) {
-                    event.preventDefault();
-                    event.currentTarget.blur();
-                  }
-                }}
-              />
+          <Columns>
+            <Columns.Column tablet={{ size: "three-quarters" }}>
+              <Form.Field>
+                <Form.Label className="is-size-4-touch is-size-2-desktop">
+                  Búsqueda General
+                </Form.Label>
+                <Form.Control className="has-icons-left">
+                  <Form.Input
+                    type="search"
+                    placeholder="Stefani"
+                    className="is-size-5"
+                    onChange={searchQueryChanged}
+                    onKeyDown={(
+                      event: React.KeyboardEvent<HTMLInputElement>
+                    ) => {
+                      if (event.keyCode === 13) {
+                        event.preventDefault();
+                        event.currentTarget.blur();
+                      }
+                    }}
+                  />
 
-              <span className="icon is-large is-left">
-                <FontAwesomeIcon
-                  transform="grow-12 down-6 right-6"
-                  icon={faSearch}
-                />
-              </span>
-            </Form.Control>
-          </Form.Field>
+                  <span className="icon is-large is-left">
+                    <FontAwesomeIcon
+                      transform="grow-12 down-6 right-6"
+                      icon={faSearch}
+                    />
+                  </span>
+                </Form.Control>
+              </Form.Field>
+            </Columns.Column>
+
+            <Columns.Column>
+              <Form.Label className="is-size-4-touch is-size-2-desktop">
+                Hallar Salón
+              </Form.Label>
+              <Form.Field>
+                <Form.Control className="has-icons-left">
+                  <Form.Input
+                    type="search"
+                    placeholder="S-229"
+                    className="is-size-5"
+                    onChange={roomSearchQueryChanged}
+                    onKeyDown={(
+                      event: React.KeyboardEvent<HTMLInputElement>
+                    ) => {
+                      if (event.keyCode === 13) {
+                        event.preventDefault();
+                        event.currentTarget.blur();
+                      }
+                    }}
+                  />
+
+                  <span className="icon is-large is-left">
+                    <FontAwesomeIcon
+                      transform="grow-12 down-6 right-6"
+                      icon={faHashtag}
+                    />
+                  </span>
+                </Form.Control>
+              </Form.Field>
+            </Columns.Column>
+          </Columns>
         </form>
 
         <Card.Content className="p-0">
@@ -305,7 +375,7 @@ function App(): ReactElement {
             className="is-size-5-desktop"
             href="https://goo.gl/maps/wYpcpiT2PWVDox4c7"
           >
-            Abrir UPRM en Google Maps
+            Ver universidad en Google Maps
           </a>
         </Card.Footer>
       </Card>
@@ -317,3 +387,4 @@ export default App;
 
 // Thanks to https://www.kirupa.com/animations/creating_pulsing_circle_animation.htm
 // Thanks to https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance
+// Thanks to https://www.uprm.edu/p/matricula/abreviaturas_de_los_edificios_rum for the data

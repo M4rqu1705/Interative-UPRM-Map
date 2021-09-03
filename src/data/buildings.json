@@ -53,7 +53,7 @@
     "left": 86.83,
     "top": 87.0,
     "radius": 2,
-    "literal_matches": ["6"]
+    "literal_matches": ["6", "ca"]
   },
   {
     "title": "Banda y Orquesta",
@@ -69,7 +69,7 @@
     "left": 57.57,
     "top": 62.28,
     "radius": 2,
-    "literal_matches": ["8", "biblioteca"]
+    "literal_matches": ["8", "biblioteca", "ib", "sibi"]
   },
   {
     "title": "Edificio de Biología",
@@ -93,7 +93,7 @@
     "left": 66.04,
     "top": 64.33,
     "radius": 2,
-    "literal_matches": ["11", "centro"]
+    "literal_matches": ["11", "centro", "ce"]
   },
   {
     "title": "Central Telefónica",
@@ -120,12 +120,12 @@
     "literal_matches": ["14", "cm", "coliseo", "mangual"]
   },
   {
-    "title": "Complejo de Tennis 2010",
+    "title": "Complejo de tenis 2010",
     "search_terms": ["complejo de tenis"],
     "left": 12.21,
     "top": 43.63,
     "radius": 2,
-    "literal_matches": ["15", "tenis", "tennis"]
+    "literal_matches": ["15", "tenis", "ct"]
   },
   {
     "title": "Cuarto Limpio (CID)",
@@ -141,7 +141,7 @@
     "left": 18.92,
     "top": 37.64,
     "radius": 2,
-    "literal_matches": ["17", "piscina", "piscinas"]
+    "literal_matches": ["17", "piscina", "piscinas", "pa"]
   },
   {
     "title": "Decanato de Estudiantes (Asistencia Económica / Calidad de Vida / Dept. de Consejería y Servicios Psicológicos)",
@@ -228,11 +228,16 @@
   },
   {
     "title": "Edificio Jesús T. Piñero (Ciencias Agrícolas)",
-    "search_terms": ["pinero", "ciencias agricolas", "edificio jesus t pinero"],
+    "search_terms": [
+      "pinero",
+      "agricultura",
+      "ciencias agricolas",
+      "edificio jesus t pinero"
+    ],
     "left": 51.72,
     "top": 82.89,
     "radius": 2,
-    "literal_matches": ["26", "p"]
+    "literal_matches": ["26", "p", "ap"]
   },
   {
     "title": "Edificio José de Diego",
@@ -259,7 +264,7 @@
   },
   {
     "title": "Edificio Luis Monzón",
-    "search_terms": ["monzon", "edificio luis monzon"],
+    "search_terms": ["monzon", "edificio luis monzon", "matematicas"],
     "left": 66.14,
     "top": 74.76,
     "radius": 2,
@@ -271,7 +276,7 @@
     "left": 78.35,
     "top": 60.14,
     "radius": 2,
-    "literal_matches": ["30", "s", "inel", "icom"]
+    "literal_matches": ["30", "s", "inel", "icom", "inge"]
   },
   {
     "title": "Edificio Oficinas de Facultad",
@@ -290,7 +295,7 @@
     "left": 3.98,
     "top": 45.25,
     "radius": 2,
-    "literal_matches": ["32"]
+    "literal_matches": ["32", "ra"]
   },
   {
     "title": "Edificio Josefina Torres Torres (Enfermería)",
@@ -375,7 +380,7 @@
     "left": 14.99,
     "top": 20.27,
     "radius": 2,
-    "literal_matches": ["40"]
+    "literal_matches": ["40", "ar", "mi"]
   },
   {
     "title": "Edificio Ingeniería Civil",
@@ -394,11 +399,11 @@
     "literal_matches": ["42", "ii", "inin"]
   },
   {
-    "title": "Edificio Antonio Luchetti (Ingeniería Mecánica)",
+    "title": "Edificio Antonio Lucchetti (Ingeniería Mecánica)",
     "search_terms": [
-      "luchetti",
-      "antonio luchetti",
-      "edificio antonio luchetti"
+      "lucchetti",
+      "antonio lucchetti",
+      "edificio antonio lucchetti"
     ],
     "left": 82.04,
     "top": 70.66,
@@ -423,11 +428,11 @@
   },
   {
     "title": "Laboratorio Ingeniería Agrícola",
-    "search_terms": ["laboratorio ingenieria agricola"],
+    "search_terms": ["ingenieria agricola", "laboratorio ingenieria agricola"],
     "left": 41.71,
     "top": 40.72,
     "radius": 2,
-    "literal_matches": ["46"]
+    "literal_matches": ["46", "am"]
   },
   {
     "title": "Laboratorio de Vehículos Solares",
@@ -458,23 +463,23 @@
     "left": 59.1,
     "top": 77.07,
     "radius": 2,
-    "literal_matches": ["49"]
+    "literal_matches": ["49", "ai"]
   },
   {
     "title": "Nueva Pista Atlética",
-    "search_terms": ["nueva pista atletica"],
+    "search_terms": ["pista sintetica", "nueva pista atletica"],
     "left": 29.12,
     "top": 49.44,
     "radius": 2,
-    "literal_matches": ["50"]
+    "literal_matches": ["50", "ps"]
   },
   {
-    "title": "CID (Oficina Administrativa)",
-    "search_terms": ["cid"],
+    "title": "Centro de Investigación y Desarrollo (CID) (Oficina Administrativa)",
+    "search_terms": ["cid", "centro de investigacion y desarrollo"],
     "left": 81.03,
     "top": 35.41,
     "radius": 2,
-    "literal_matches": ["51"]
+    "literal_matches": ["51", "cd"]
   },
   {
     "title": "Ofic. Campus Verde (Casa Solar 2005)",
@@ -533,7 +538,7 @@
     "left": 80.51,
     "top": 64.33,
     "radius": 2,
-    "literal_matches": ["58"]
+    "literal_matches": ["58", "sa"]
   },
   {
     "title": "Sendero de los ejercicios",
@@ -557,7 +562,7 @@
     "left": 46.7,
     "top": 43.63,
     "radius": 2,
-    "literal_matches": ["61"]
+    "literal_matches": ["61", "ta"]
   },
   {
     "title": "Instalaciones Temporeras Guardia Universitaria",
