@@ -15,7 +15,7 @@
     "top": 46.19,
     "radius": 2,
     "literal_matches": ["1"],
-    "google_maps_search": ""
+    "google_maps_search": "Departamento de Seguridad y Transito, Mayagüez"
   },
   {
     "title": "Administración de Empresas",
@@ -24,7 +24,7 @@
     "top": 20.7,
     "radius": 2,
     "literal_matches": ["2", "ae", "admi"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM Administración de Empresas, Mayagüez"
   },
   {
     "title": "Almacén del CID",
@@ -33,7 +33,7 @@
     "top": 29.6,
     "radius": 2,
     "literal_matches": ["3"],
-    "google_maps_search": ""
+    "google_maps_search": "CID University of Puerto Rico at Mayagüez, Calle Magas, Mayagüez"
   },
   {
     "title": "Almacén Obras de MuSA",
@@ -42,7 +42,7 @@
     "top": 82.72,
     "radius": 2,
     "literal_matches": ["4"],
-    "google_maps_search": ""
+    "google_maps_search": "La Residencia Oficial del Rector, Mayagüez"
   },
   {
     "title": "Antiguo Centro Nuclear (varios programas incluyendo Sea Grant)",
@@ -51,7 +51,7 @@
     "top": 28.23,
     "radius": 2,
     "literal_matches": ["5"],
-    "google_maps_search": ""
+    "google_maps_search": "Sea Grant, Mayagüez, Miradero, Mayagüez"
   },
   {
     "title": "Antigua Pista Atlética",
@@ -60,7 +60,7 @@
     "top": 87.0,
     "radius": 2,
     "literal_matches": ["6", "ca"],
-    "google_maps_search": ""
+    "google_maps_search": "Pista del Colegio, Ramon Emeterio Betances, Mayagüez"
   },
   {
     "title": "Banda y Orquesta",
@@ -69,7 +69,7 @@
     "top": 79.73,
     "radius": 2,
     "literal_matches": ["7", "banda"],
-    "google_maps_search": ""
+    "google_maps_search": "Banda y Orquesta, Mayagüez"
   },
   {
     "title": "Biblioteca General",
@@ -78,7 +78,7 @@
     "top": 62.28,
     "radius": 2,
     "literal_matches": ["8", "biblioteca", "ib", "sibi"],
-    "google_maps_search": ""
+    "google_maps_search": "RUM General Library, Mayagüez"
   },
   {
     "title": "Edificio de Biología",
@@ -87,7 +87,7 @@
     "top": 28.23,
     "radius": 2,
     "literal_matches": ["9", "b", "biol"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM Biología, Mayagüez"
   },
   {
     "title": "Centro de Cuido Diurno",
@@ -96,7 +96,7 @@
     "top": 42.09,
     "radius": 2,
     "literal_matches": ["10", "cuido"],
-    "google_maps_search": ""
+    "google_maps_search": "Ciencia y Tecnología de Alimentos UPRM, Av. Las Marías, Mayagüez"
   },
   {
     "title": "Centro de Estudiantes",
@@ -105,7 +105,7 @@
     "top": 64.33,
     "radius": 2,
     "literal_matches": ["11", "centro", "ce"],
-    "google_maps_search": ""
+    "google_maps_search": "Centro De Estudiantes, Centro de Estudiantes, Mayagüez"
   },
   {
     "title": "Central Telefónica",
@@ -114,7 +114,7 @@
     "top": 53.29,
     "radius": 2,
     "literal_matches": ["12"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio de Enfermería Josefina Torres Torres, Avenida Palmeras, Mayagüez"
   },
   {
     "title": "CISA",
@@ -123,7 +123,7 @@
     "top": 23.27,
     "radius": 2,
     "literal_matches": ["13"],
-    "google_maps_search": ""
+    "google_maps_search": "CID University of Puerto Rico at Mayagüez, Calle Magas, Mayagüez"
   },
   {
     "title": "Coliseo Rafael A. Mangual",
@@ -132,7 +132,7 @@
     "top": 62.87,
     "radius": 2,
     "literal_matches": ["14", "cm", "coliseo", "mangual"],
-    "google_maps_search": ""
+    "google_maps_search": "Coliseo Rafael A. Mangual, Coliseo Mangual, Mayagüez"
   },
   {
     "title": "Complejo de tenis 2010",
@@ -141,7 +141,7 @@
     "top": 43.63,
     "radius": 2,
     "literal_matches": ["15", "tenis", "ct"],
-    "google_maps_search": ""
+    "google_maps_search": "Canchas de tenis UPRM, Mayagüez"
   },
   {
     "title": "Cuarto Limpio (CID)",
@@ -150,7 +150,7 @@
     "top": 32.93,
     "radius": 2,
     "literal_matches": ["16"],
-    "google_maps_search": ""
+    "google_maps_search": "CID University of Puerto Rico at Mayagüez, Calle Magas, Mayagüez"
   },
   {
     "title": "Natatorio 2010",
@@ -159,7 +159,7 @@
     "top": 37.64,
     "radius": 2,
     "literal_matches": ["17", "piscina", "piscinas", "pa"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM Natatorium, Mayagüez"
   },
   {
     "title": "Decanato de Estudiantes (Asistencia Económica / Calidad de Vida / Dept. de Consejería y Servicios Psicológicos)",
@@ -178,7 +178,7 @@
       "calidad de vida",
       "consejeria y servicios psicologicos"
     ],
-    "google_maps_search": ""
+    "google_maps_search": "Decanato de Estudiantes, Mayagüez"
   },
   {
     "title": "Departamento de Edificios y Terrenos",
@@ -190,7 +190,7 @@
     "top": 35.67,
     "radius": 2,
     "literal_matches": ["19", "edificios y terrenos", "edificios", "terrenos"],
-    "google_maps_search": ""
+    "google_maps_search": "Pista Sintética, Calle 14, Mayagüez"
   },
   {
     "title": "Edificio Sánchez Hidalgo (DECEP / PpMES / Economía)",
@@ -205,7 +205,7 @@
     "top": 47.65,
     "radius": 2,
     "literal_matches": ["20", "sh", "decep"],
-    "google_maps_search": ""
+    "google_maps_search": "Sánchez Hidalgo, Mayagüez"
   },
   {
     "title": "Edificio A (Dormitorio de Atletas)",
@@ -214,16 +214,16 @@
     "top": 32.34,
     "radius": 2,
     "literal_matches": ["21"],
-    "google_maps_search": ""
+    "google_maps_search": "6V94+547, Mayagüez, 00682"
   },
   {
     "title": "Edificio B (Adm. Pequeños Negocios / Ofic. Adm.)",
-    "search_terms": ["edificio b"],
+    "search_terms": ["edificio b", "estacion experimental agricola"],
     "left": 11.78,
     "top": 32.16,
     "radius": 2,
     "literal_matches": ["22"],
-    "google_maps_search": ""
+    "google_maps_search": "6V94+27M, Mayagüez, 00682"
   },
   {
     "title": "Edificio C (Oficina de Extensión Agrícola)",
@@ -232,16 +232,16 @@
     "top": 36.18,
     "radius": 2,
     "literal_matches": ["23"],
-    "google_maps_search": ""
+    "google_maps_search": "Building Servicio de Extensión Agrícola - Edificio C, Av. Las Marías, Mayagüez"
   },
   {
-    "title": "Edificio D",
-    "search_terms": ["edificio d"],
+    "title": "Edificio D (Actual Red Sísmica)",
+    "search_terms": ["edificio d", "red sismica"],
     "left": 9.43,
     "top": 34.13,
     "radius": 2,
     "literal_matches": ["24"],
-    "google_maps_search": ""
+    "google_maps_search": "6V94+24F, Miradero, Mayagüez 00682"
   },
   {
     "title": "Edificio Chardón (Estudios Generales)",
@@ -250,7 +250,7 @@
     "top": 61.51,
     "radius": 2,
     "literal_matches": ["25", "ch"],
-    "google_maps_search": ""
+    "google_maps_search": "Red Sismica de Puerto Rico, Miradero, Mayagüez"
   },
   {
     "title": "Edificio Jesús T. Piñero (Ciencias Agrícolas)",
@@ -264,7 +264,7 @@
     "top": 82.89,
     "radius": 2,
     "literal_matches": ["26", "p", "ap"],
-    "google_maps_search": ""
+    "google_maps_search": "Jesús T. Piñero Building - Edificio Jesús T. Piñero, Mayagüez"
   },
   {
     "title": "Edificio José de Diego",
@@ -273,7 +273,7 @@
     "top": 75.79,
     "radius": 2,
     "literal_matches": ["27"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio José de Diego, Mayagüez, 00680"
   },
   {
     "title": "Edificio Luis de Celis (Admisiones - Celis 101 / Registro / Decanato de Artes y Ciencias / Estudios Graduados)",
@@ -289,7 +289,7 @@
     "top": 67.49,
     "radius": 2,
     "literal_matches": ["28", "c"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Celis, Mayagüez Pueblo, Mayagüez"
   },
   {
     "title": "Edificio Luis Monzón",
@@ -298,7 +298,7 @@
     "top": 74.76,
     "radius": 2,
     "literal_matches": ["29", "m"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Luis C. Monzón, Mayagüez"
   },
   {
     "title": "Edificio Luis Stefani",
@@ -307,7 +307,7 @@
     "top": 60.14,
     "radius": 2,
     "literal_matches": ["30", "s", "inel", "icom", "inge"],
-    "google_maps_search": ""
+    "google_maps_search": "Engineering Building Luis A. Stéfani, Mayagüez"
   },
   {
     "title": "Edificio Oficinas de Facultad",
@@ -316,7 +316,7 @@
     "top": 51.07,
     "radius": 2,
     "literal_matches": ["31", "of"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Oficinas de Facultad, Mayagüez, 00680"
   },
   {
     "title": "Edificio Ramírez de Arellano y Rossell",
@@ -328,7 +328,7 @@
     "top": 45.25,
     "radius": 2,
     "literal_matches": ["32", "ra"],
-    "google_maps_search": ""
+    "google_maps_search": "Ciencia y Tecnología de Alimentos UPRM, Av. Las Marías, Mayagüez"
   },
   {
     "title": "Edificio Josefina Torres Torres (Enfermería)",
@@ -341,7 +341,7 @@
     "top": 53.21,
     "radius": 2,
     "literal_matches": ["33", "ee"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio de Enfermería Josefina Torres Torres, Avenida Palmeras, Mayagüez"
   },
   {
     "title": "Canchas de Racquetball 2010",
@@ -350,7 +350,7 @@
     "top": 28.06,
     "radius": 2,
     "literal_matches": ["34"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM RACQUETBALL COURTS, Av. Las Marías, Mayagüez"
   },
   {
     "title": "Edificio Terrats (Finanzas y Pagaduría)",
@@ -359,7 +359,7 @@
     "top": 50.81,
     "radius": 2,
     "literal_matches": ["35", "t"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Esteban Terrats, Avenida Laureles, Mayagüez"
   },
   {
     "title": "Finca Alzamora",
@@ -368,7 +368,7 @@
     "top": 37.3,
     "radius": 2,
     "literal_matches": ["36", "az"],
-    "google_maps_search": ""
+    "google_maps_search": "Finca Alzamora - UPR Mayagüez, Mayagüez"
   },
   {
     "title": "Física, Geología y Ciencias Marinas",
@@ -382,7 +382,7 @@
     "top": 44.57,
     "radius": 2,
     "literal_matches": ["37", "f", "fisica", "geologia"],
-    "google_maps_search": ""
+    "google_maps_search": "Fisica, Geologia Y Ciencias Marinas, Mayagüez"
   },
   {
     "title": "Gimnasio Ángel F. Espada",
@@ -396,7 +396,7 @@
     "top": 65.53,
     "radius": 2,
     "literal_matches": ["38", "ge", "espada"],
-    "google_maps_search": ""
+    "google_maps_search": "6V64+RP7 Mayagüez"
   },
   {
     "title": "Ofic. en Remodelación Guardia Universitaria",
@@ -408,7 +408,7 @@
     "top": 49.1,
     "radius": 2,
     "literal_matches": ["39"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Esteban Terrats, Avenida Laureles, Mayagüez"
   },
   {
     "title": "Imprenta y Artes Plásticas",
@@ -421,7 +421,7 @@
     "top": 20.27,
     "radius": 2,
     "literal_matches": ["40", "ar", "mi"],
-    "google_maps_search": ""
+    "google_maps_search": "Printing and Fine Arts Building, Mayagüez"
   },
   {
     "title": "Edificio Ingeniería Civil",
@@ -430,7 +430,7 @@
     "top": 19.93,
     "radius": 2,
     "literal_matches": ["41", "ci", "civil", "inci"],
-    "google_maps_search": ""
+    "google_maps_search": "Ingeniería Civil y Agrimensura UPRM, Mayagüez"
   },
   {
     "title": "Edificio Ingeniería Industrial",
@@ -439,7 +439,7 @@
     "top": 51.67,
     "radius": 2,
     "literal_matches": ["42", "ii", "inin"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio de Ingeniería Industrial, Mayagüez"
   },
   {
     "title": "Edificio Antonio Lucchetti (Ingeniería Mecánica)",
@@ -452,7 +452,7 @@
     "top": 70.66,
     "radius": 2,
     "literal_matches": ["43", "l", "inme"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Antonio Luchetti, Avenida Alfonso Valdés Cobián, Mayagüez"
   },
   {
     "title": "Edificio Ingeniería Química",
@@ -461,7 +461,7 @@
     "top": 26.69,
     "radius": 2,
     "literal_matches": ["44", "iq", "inqu"],
-    "google_maps_search": ""
+    "google_maps_search": "Ingeniería Química, Mayagüez, 00680"
   },
   {
     "title": "Museo de Vehículos Solares",
@@ -470,7 +470,7 @@
     "top": 24.21,
     "radius": 2,
     "literal_matches": ["45"],
-    "google_maps_search": ""
+    "google_maps_search": "CID University of Puerto Rico at Mayagüez, Calle Magas, Mayagüez"
   },
   {
     "title": "Laboratorio Ingeniería Agrícola",
@@ -479,7 +479,7 @@
     "top": 40.72,
     "radius": 2,
     "literal_matches": ["46", "am"],
-    "google_maps_search": ""
+    "google_maps_search": "Agricultural and Biosystems Engineering Department, Avenida Alfonso Valdés Cobián, Mayagüez"
   },
   {
     "title": "Laboratorio de Vehículos Solares",
@@ -491,7 +491,7 @@
     "top": 20.62,
     "radius": 2,
     "literal_matches": ["47"],
-    "google_maps_search": ""
+    "google_maps_search": "CID University of Puerto Rico at Mayagüez, Calle Magas, Mayagüez"
   },
   {
     "title": "Centro Interdisciplinario de Estudios del Litoral",
@@ -504,7 +504,7 @@
     "top": 24.47,
     "radius": 2,
     "literal_matches": ["48"],
-    "google_maps_search": ""
+    "google_maps_search": "Casa EcoSolar, Mayagüez"
   },
   {
     "title": "MuSA (Museo y Senado Académico)",
@@ -513,7 +513,7 @@
     "top": 77.07,
     "radius": 2,
     "literal_matches": ["49", "ai"],
-    "google_maps_search": ""
+    "google_maps_search": "Museo de Arte MUSA, Mayagüez"
   },
   {
     "title": "Nueva Pista Atlética",
@@ -522,7 +522,7 @@
     "top": 49.44,
     "radius": 2,
     "literal_matches": ["50", "ps"],
-    "google_maps_search": ""
+    "google_maps_search": "Pista Sintética, Calle 14, Mayagüez"
   },
   {
     "title": "Centro de Investigación y Desarrollo (CID) (Oficina Administrativa)",
@@ -531,7 +531,7 @@
     "top": 35.41,
     "radius": 2,
     "literal_matches": ["51", "cd"],
-    "google_maps_search": ""
+    "google_maps_search": "CID RUM, Mayagüez"
   },
   {
     "title": "Ofic. Campus Verde (Casa Solar 2005)",
@@ -540,7 +540,7 @@
     "top": 29.43,
     "radius": 2,
     "literal_matches": ["52"],
-    "google_maps_search": ""
+    "google_maps_search": "Casa EcoSolar, Mayagüez"
   },
   {
     "title": "Programa Rehabilitación Vocacional",
@@ -552,7 +552,7 @@
     "top": 40.21,
     "radius": 2,
     "literal_matches": ["53"],
-    "google_maps_search": ""
+    "google_maps_search": "Paseo Hibisco, Mayagüez"
   },
   {
     "title": "OMCA",
@@ -561,7 +561,7 @@
     "top": 42.43,
     "radius": 2,
     "literal_matches": ["54"],
-    "google_maps_search": ""
+    "google_maps_search": "Paseo Hibisco, Mayagüez"
   },
   {
     "title": "Edificio de Química",
@@ -570,16 +570,16 @@
     "top": 44.05,
     "radius": 2,
     "literal_matches": ["55", "q"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM Química, Edificio de Química, Puerto Rico 108, Mayagüez "
   },
   {
-    "title": "Red Sísmica",
-    "search_terms": ["red sismica"],
+    "title": "Antigua Red Sísmica (Actualmente oficinas de maestros)",
+    "search_terms": [],
     "left": 67.0,
     "top": 41.83,
     "radius": 2,
     "literal_matches": ["56"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM Física, Mayagüez"
   },
   {
     "title": "Residencia del Rector",
@@ -588,7 +588,7 @@
     "top": 83.83,
     "radius": 2,
     "literal_matches": ["57"],
-    "google_maps_search": ""
+    "google_maps_search": "La Residencia Oficial del Rector, Mayagüez"
   },
   {
     "title": "R.O.T.C.",
@@ -597,7 +597,7 @@
     "top": 64.33,
     "radius": 2,
     "literal_matches": ["58", "sa"],
-    "google_maps_search": ""
+    "google_maps_search": "Edificio Sánchez Saliva, Mayagüez, 00680"
   },
   {
     "title": "Sendero de los ejercicios",
@@ -606,7 +606,7 @@
     "top": 78.61,
     "radius": 2,
     "literal_matches": ["59"],
-    "google_maps_search": ""
+    "google_maps_search": "Coliseo Rafael A. Mangual, Coliseo Mangual, Mayagüez"
   },
   {
     "title": "Servicios Médicos y Sala de Emergencia",
@@ -614,8 +614,14 @@
     "left": 59.15,
     "top": 70.49,
     "radius": 2,
-    "literal_matches": ["60", "emergencia", "servicios medicos"],
-    "google_maps_search": ""
+    "literal_matches": [
+      "60",
+      "emergencia",
+      "servicios medicos",
+      "servmed",
+      "medicos"
+    ],
+    "google_maps_search": "Servicios Médicos, Mayagüez, 00680"
   },
   {
     "title": "Taller de Artes Gráficas",
@@ -624,7 +630,7 @@
     "top": 43.63,
     "radius": 2,
     "literal_matches": ["61", "ta"],
-    "google_maps_search": ""
+    "google_maps_search": "UPRM Química, Edificio de Química, Puerto Rico 108, Mayagüez"
   },
   {
     "title": "Instalaciones Temporeras Guardia Universitaria",
@@ -636,7 +642,7 @@
     "top": 48.5,
     "radius": 2,
     "literal_matches": ["62"],
-    "google_maps_search": ""
+    "google_maps_search": "Departamento de Seguridad y Transito, Mayagüez"
   },
   {
     "title": "Salón Mezzanine",
@@ -650,6 +656,6 @@
     "top": 46.96,
     "radius": 2,
     "literal_matches": ["63"],
-    "google_maps_search": ""
+    "google_maps_search": "Asociación y Fundación Alumni Colegial"
   }
 ]

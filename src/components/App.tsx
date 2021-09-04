@@ -303,21 +303,29 @@ function App(): ReactElement {
           {/* |_|_\___/__/\_,_|_|\__| |_|  |_\___/__/__/\__,_\__, \___| */}
           {/*                                                |___/      */}
           <Container style={{ margin: "1rem" }}>
-            <p className="is-size-3-desktop is-size-5-touch">
-              {buildResultMessage(searchResult)}
-            </p>
-            {searchResult > 0 && (
-              <a
-                className="has-text-primary is-underlined"
-                href={`https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=UPRM+${buildings[
-                  searchResult
-                ].google_maps_search
-                  .split(" ")
-                  .join("+")}`}
-              >
-                Abrir este lugar en Google Maps
-              </a>
-            )}
+            <a
+              className="is-flex is-flex-direction-row is-align-items-center has-text-black my-3 is-size-3-desktop is-size-5-touch is-block"
+              href={
+                searchResult > 0
+                  ? `https://www.google.com/maps/dir/?api=1&travelmode=walking&destination=${buildings[
+                      searchResult
+                    ].google_maps_search
+                      .split(" ")
+                      .join("+")}`
+                  : "UPR Mayagüez"
+              }
+            >
+              {searchResult > 0 && (
+                <img
+                  className="image is-32x32 is-inline mr-2"
+                  src="./assets/Google_Maps_Logo.webp"
+                  alt="Google Maps Logo"
+                />
+              )}
+              <span className="is-vcentered">
+                {buildResultMessage(searchResult)}
+              </span>
+            </a>
           </Container>
 
           {/*     ___                   _                  */}
