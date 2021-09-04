@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# [Mapa Interactivo UPRM](https://m4rqu1705.github.io/Interative-UPRM-Map/build/index.html)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Los [mapas oficiales del RUM en PDF](https://www.uprm.edu/portales/mapa/) no son las mejores formas de presentar los lugares. A veces puede ser difícil de encontrar los edificios ya que es bastante fácil encontrar el edificio que buscas en la lista, pero no el número en el mapa ...
 
-## Available Scripts
+Por otro lado, Google Maps no está totalmente sincronizado con el mapa oficial del RUM. Le faltan algunos lugares y tiene lugares demás en algunas ocasiones.
 
-In the project directory, you can run:
+Hay detalles adicionales que serían utiles para estudiantes yendo al Colegio por primera vez, como:
 
-### `npm start`
+- Buscar el edificio dado el salón de clases
+- Buscar las entradas peatonales y de vehículos en el Colegio (Google Maps tiene algo de esto, pero un poco escondido)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Por esto creé este mapa interactivo del RUM!! Es primitivo y hay mucho para mejorar, pero debería:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [x] Permitir buscar por edificios por nombre.
+- [x] Buscar un edificio a base del número del salón.
+- [x] Tocar un edificio en el mapa e identificarlo.
+- [x] Enseñar la lista de edificios en el RUM
+- [x] Enlazarte con Google Maps para guiarte directamente (o cerca) del edificio que buscas.
+- [ ] Enseñar entradas peatonales y de vehículos en el Colegio
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Cualquier sugerencia no duden en hacer un PR o enviar un email.
